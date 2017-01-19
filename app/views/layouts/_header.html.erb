@@ -1,24 +1,24 @@
-<div class="top-bar">
-  <div class="social-lang">
-    <span class="socials-icon">
-      <a href="http://facebook.com" alt="Facebook"><img src="/img/icons/fb.png" alt="Facebook"></a>
-      <a href="#" alt="Linkedin"><img src="/img/icons/lk.png" alt="Linkedin"></a>
-      <a href="#" alt="Twitter"><img src="/img/icons/tw.png" alt="Twitter"></a>
-      <a href="#" alt="Google+"><img src="/img/icons/gp.png" alt="Google+"></a>
-    </span>
-    <span class="languages">
-      <a href="#" alt="Définir la langue du site en français"><img src="/img/icons/flag_france.png" title="Français"/></a>
-      <a href="#" alt="Définir la langue du site en anglais"><img src="/img/icons/flag_uk.png" title="Anglais"></a>
-    </span>
-  </div>
-
-  <div class="contacts">
-    <%= icon('envelope') %> contact<%= icon('at') %>artandteo.com 
-    <%= icon('mobile') %> 02 43 69 24 27
-  </div>
-</div>
-
 <header>
+  <div class="top-bar">
+    <div class="social-lang">
+      <span class="socials-icon">
+        <a href="http://facebook.com" alt="Facebook"><img src="/img/icons/fb.png" alt="Facebook"></a>
+        <a href="#" alt="Linkedin"><img src="/img/icons/lk.png" alt="Linkedin"></a>
+        <a href="#" alt="Twitter"><img src="/img/icons/tw.png" alt="Twitter"></a>
+        <a href="#" alt="Google+"><img src="/img/icons/gp.png" alt="Google+"></a>
+      </span>
+      <span class="languages">
+        <a href="#" alt="Définir la langue du site en français"><img class="lg-sel" src="/img/icons/flag_france.png" title="Français"/></a>
+        <a href="#" alt="Définir la langue du site en anglais"><img class="lg-unsel" src="/img/icons/flag_uk.png" title="Anglais"></a>
+      </span>
+    </div>
+
+    <div class="contacts">
+      <span class="icontb"><%= icon('envelope') %></span><span class="txttb">contact<%= icon('at') %>artandteo.com</span>
+      <span class="icontb"><%= icon('mobile') %></span><span class="txttb"> 02 43 69 24 27</span>
+    </div>
+  </div>
+
   <nav class="navbar navbar-default">
    <div class="container-fluid">
      <!-- Brand and toggle get grouped for better mobile display -->
@@ -33,27 +33,39 @@
 
      <!-- Collect the nav links, forms, and other content for toggling -->
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-       <ul class="nav navbar-nav">
-         <li class="active"><a href="<%= root_path %>">Accueil <span class="sr-only">(current)</span></a></li>
-         <li><a href="<%= agence_path %>">Agence</a></li>
-         <li class="dropdown">
-           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-           <ul class="dropdown-menu">
-             <li><a href="<%= strategie_digitale_path %>">Stratégie digitale</a></li>
-             <li><a href="<%= web_developpement_path %>">Web developpement</a></li>
-             <li><a href="<%= community_management_path %>">Community manager</a></li>
-             <li><a href="<%= referencement_path %>">Référencement</a></li>
-           </ul>
-         </li>
-       </ul>
-       <a id="logo_at"class="navbar-brand" href="<%= root_path %>">
-         <img alt="Logo ArtandTeo" src="/img/logfb-ArtandTeo.png">
-       </a>
-       <ul class="nav navbar-nav navbar-right">
-         <li><a href="<%= portfolio_path %>">Réalisations</a></li>
-         <li><a href="<%= blog_posts_path %>">Blog</a></li>
-         <li><a href="<%= contact_path %>">Contact</a></li>
-       </ul>
+       <div class="row">
+       <div class="col-md-5 center">
+         <ul class="nav navbar-nav">
+           <li class="active"><a href="<%= root_path %>">Accueil <span class="sr-only">(current)</span></a></li>
+           <li><a class="separator"></a></li>
+           <li><a href="<%= agence_path %>">Agence</a></li>
+           <li><a class="separator"></a></li>
+           <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+               <li><a href="<%= strategie_digitale_path %>">Stratégie digitale</a></li>
+               <li><a href="<%= web_developpement_path %>">Web developpement</a></li>
+               <li><a href="<%= community_management_path %>">Community manager</a></li>
+               <li><a href="<%= referencement_path %>">Référencement</a></li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+       <div id="logo_at" class="col-md-2">
+         <a class="" href="<%= root_path %>">
+           <img alt="Logo ArtandTeo" src="/img/logfb-ArtandTeo.png">
+         </a>
+       </div>
+       <div class= "col-md-5 center">
+         <ul class="nav navbar-nav navbar-right">
+           <li><a href="<%= portfolio_path %>">Réalisations</a></li>
+           <li><a class="separator"></a></li>
+           <li><a href="<%= blog_posts_path %>">Blog</a></li>
+           <li><a class="separator"></a></li>
+           <li><a href="<%= contact_path %>">Contact</a></li>
+         </ul>
+       </div>
+     </div>
      </div><!-- /.navbar-collapse -->
    </div><!-- /.container-fluid -->
   </nav>

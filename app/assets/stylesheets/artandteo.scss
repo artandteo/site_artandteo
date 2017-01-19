@@ -1,0 +1,83 @@
+// declaration des variables de couleurs
+
+$orange: #F8931D;
+$taupe: #746457;
+$vert: #B8E986;
+$blanc: #FFFFFF;
+$gris_pale: #F2F2F2;
+
+$navbar-default-bg: $blanc;
+$navbar-height: 80px;
+
+//---------------- top-bar --------------------
+
+.top-bar {
+  background-color: $taupe;
+  color: $blanc;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.socials-icon {
+  float: left;
+  padding-left: 10px;
+  img {
+    padding: 0 7px 0 7px;
+  }
+}
+
+.socials-icon::after {
+  font-size: 18px;
+  content: " | ";
+  padding: 0 10px;
+}
+
+.languages {
+  padding-top: 3px;
+  padding-left: 10px;
+  float: left;
+  img {
+    padding-right: 10px;
+  }
+}
+
+.contacts {
+  float: right;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.lg-sel {}
+
+.lg-unsel {
+  opacity: 0.25;
+}
+
+.lg-unsel:hover {
+    opacity: 0.5;
+}
+
+.icontb {
+  font-size: 24px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.txttb {
+  padding-bottom: 5px;
+}
+
+//---------------- nav-bar --------------------
+
+.separator::after{
+  font-size: 18px;
+  color: $taupe;
+  content: " | ";
+  padding: 0 10px 0 20px;
+}
+
+#logo_at {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
