@@ -16,5 +16,8 @@ module ArtandteoSite
     config.assets.precompile += %w( ckeditor/* )
     config.autoload_paths += %w(#{config.root}/app/models/ckeditor)
 
+    I18n.enforce_available_locales = false
+	I18n.config.available_locales = :en
+    I18n.config.default_locale = :fr
   end
 end

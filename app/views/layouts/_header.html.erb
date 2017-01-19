@@ -8,8 +8,8 @@
         <a href="#" alt="Google+"><img src="/img/icons/gp.png" alt="Google+"></a>
       </span>
       <span class="languages">
-        <a href="#" alt="Définir la langue du site en français"><img class="lg-sel" src="/img/icons/flag_france.png" title="Français"/></a>
-        <a href="#" alt="Définir la langue du site en anglais"><img class="lg-unsel" src="/img/icons/flag_uk.png" title="Anglais"></a>
+        <a href="/" alt="Définir la langue du site en français"><img class="lg-sel" src="/img/icons/flag_france.png" title="Français"/></a>
+        <a href="/en" alt="Définir la langue du site en anglais"><img class="lg-unsel" src="/img/icons/flag_uk.png" title="Anglais"></a>
       </span>
     </div>
 
@@ -36,17 +36,17 @@
        <div class="row">
        <div class="col-md-5 center">
          <ul class="nav navbar-nav">
-           <li class="active"><a href="<%= root_path %>">Accueil <span class="sr-only">(current)</span></a></li>
+           <li class="active"><a href="<%= root_path %>"><%= t('liens.accueil') %> <span class="sr-only">(current)</span></a></li>
            <li><a class="separator"></a></li>
-           <li><a href="<%= agence_path %>">Agence</a></li>
+           <li><a href="<%= agence_path %>"><%= t('liens.agence') %></a></li>
            <li><a class="separator"></a></li>
            <li class="dropdown">
              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
              <ul class="dropdown-menu">
-               <li><a href="<%= strategie_digitale_path %>">Stratégie digitale</a></li>
-               <li><a href="<%= web_developpement_path %>">Web developpement</a></li>
-               <li><a href="<%= community_management_path %>">Community manager</a></li>
-               <li><a href="<%= referencement_path %>">Référencement</a></li>
+               <li><a href="<%= strategie_digitale_path %>"><%= t('liens.strategie_digitale') %></a></li>
+               <li><a href="<%= web_developpement_path %>"><%= t('liens.web_developpement') %></a></li>
+               <li><a href="<%= community_management_path %>"><%= t('liens.community_manager') %></a></li>
+               <li><a href="<%= referencement_path %>"><%= t('liens.referencement') %></a></li>
              </ul>
            </li>
          </ul>
@@ -58,11 +58,11 @@
        </div>
        <div class= "col-md-5 center">
          <ul class="nav navbar-nav navbar-right">
-           <li><a href="<%= portfolio_path %>">Réalisations</a></li>
+           <li><a href="<%= portfolio_path %>"><%= t('liens.realisations') %></a></li>
            <li><a class="separator"></a></li>
-           <li><a href="<%= blog_posts_path %>">Blog</a></li>
+           <li><a href="<%= blog_posts_path %>"><%= t('blogs.titre') %></a></li>
            <li><a class="separator"></a></li>
-           <li><a href="<%= contact_path %>">Contact</a></li>
+           <li><a href="<%= contact_path %>"><%= t('liens.contact') %></a></li>
          </ul>
        </div>
      </div>

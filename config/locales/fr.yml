@@ -1,0 +1,33 @@
+fr: 
+  liens:
+    accueil: Accueil
+    agence: Agence
+    services: Services
+    strategie_digitale: Stratégie digitale
+    web_developpement: Développement web
+    community_manager: Community manager
+    referencement: Référencement
+    realisations: Réalisations
+    contact: Contact
+  pages:
+    accueil:
+      titre: Bienvenue sur le site d'ArtandTeo
+    agence: 
+      titre: Agence
+    services:
+      titre: Nos services
+    strategie_digitale:
+      titre: Stratégie digitale
+    web_developpement: 
+      titre: Web Développement
+    community_manager:
+      titre: Community manager
+    referencement:
+      titre: Réferencement
+    realisations:
+      titre: Nos réalisations
+    contact: 
+      titre: Nous contacter
+  blogs:
+    titre: Blog
+
