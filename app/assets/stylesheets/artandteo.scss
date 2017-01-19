@@ -81,3 +81,24 @@ $navbar-height: 80px;
   padding: auto;
   text-align: center;
 }
+
+//---------------- footer --------------------
+
+#newsletter {
+  h4 { text-align: center; }
+  h4::after {
+    border-top : 1px solid $orange;
+    width : 50px;
+  }
+}
+
+#social-footer {
+  background-color: $taupe;
+  height: 100px;
+}
+
+#menu-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
