@@ -14,5 +14,10 @@
  *= require_self
  */
 
+@import "artandteo";
+
 @import "bootstrap-sprockets";
-@import "bootstrap"
+@import "bootstrap";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
