@@ -1,0 +1,59 @@
+<div class="top-bar">
+  <div class="social-lang">
+    <span class="socials-icon">
+      <a href="http://facebook.com" alt="Facebook"><img src="/img/icons/fb.png" alt="Facebook"></a>
+      <a href="#" alt="Linkedin"><img src="/img/icons/lk.png" alt="Linkedin"></a>
+      <a href="#" alt="Twitter"><img src="/img/icons/tw.png" alt="Twitter"></a>
+      <a href="#" alt="Google+"><img src="/img/icons/gp.png" alt="Google+"></a>
+    </span>
+    <span class="languages">
+      <a href="#" alt="Définir la langue du site en français"><img src="/img/icons/flag_france.png" title="Français"/></a>
+      <a href="#" alt="Définir la langue du site en anglais"><img src="/img/icons/flag_uk.png" title="Anglais"></a>
+    </span>
+  </div>
+
+  <div class="contacts">
+
+  </div>
+</div>
+
+<header>
+  <nav class="navbar navbar-default">
+   <div class="container-fluid">
+     <!-- Brand and toggle get grouped for better mobile display -->
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+     </div>
+
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       <ul class="nav navbar-nav">
+         <li class="active"><a href="<%= root_path %>">Accueil <span class="sr-only">(current)</span></a></li>
+         <li><a href="<%= agence_path %>">Agence</a></li>
+         <li class="dropdown">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+           <ul class="dropdown-menu">
+             <li><a href="<%= strategie_digitale_path %>">Stratégie digitale</a></li>
+             <li><a href="<%= web_developpement_path %>">Web developpement</a></li>
+             <li><a href="<%= community_management_path %>">Community manager</a></li>
+             <li><a href="<%= referencement_path %>">Référencement</a></li>
+           </ul>
+         </li>
+       </ul>
+       <a id="logo_at"class="navbar-brand" href="<%= root_path %>">
+         <img alt="Logo ArtandTeo" src="/img/logfb-ArtandTeo.png">
+       </a>
+       <ul class="nav navbar-nav navbar-right">
+         <li><a href="<%= portfolio_path %>">Réalisations</a></li>
+         <li><a href="<%= blog_posts_path %>">Blog</a></li>
+         <li><a href="<%= contact_path %>">Contact</a></li>
+       </ul>
+     </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+  </nav>
+</header>

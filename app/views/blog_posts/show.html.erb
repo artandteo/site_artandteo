@@ -7,7 +7,7 @@
 
 <p>
   <strong>Content:</strong>
-  <%= @blog_post.content %>
+  <%= raw @blog_post.content %>
 </p>
 
 <%= link_to 'Edit', edit_blog_post_path(@blog_post) %> |

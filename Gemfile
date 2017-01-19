@@ -35,6 +35,10 @@ gem 'ckeditor'
 gem 'carrierwave'
 gem 'mini_magick'
 
+
+# bootstrap SASS
+gem 'bootstrap-sass', '~> 3.3.6'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
