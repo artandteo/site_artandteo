@@ -4,6 +4,7 @@ class BlogPostsController < ApplicationController
   # GET /blog_posts
   # GET /blog_posts.json
   def index
+    @titre = t('blogs.titre')
     @blog_posts = BlogPost.all
   end
 
