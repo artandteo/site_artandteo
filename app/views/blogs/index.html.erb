@@ -17,7 +17,7 @@
     <% @blogs.each do |blog| %>
       <tr>
         <td><%= blog.titre %></td>
-        <td><%= blog.contenu %></td>
+        <td><%= raw blog.contenu %></td>
         <td><%= blog.image %></td>
         <td><%= blog.image_legende %></td>
         <td><%= link_to 'Show', blog %></td>

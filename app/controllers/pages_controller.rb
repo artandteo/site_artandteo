@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
 	def accueil
 		@titre = t('accueil.titre')
+		@last_post = Blog.last
 	end
 
 	def agence

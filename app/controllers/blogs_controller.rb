@@ -7,6 +7,8 @@ class BlogsController < ApplicationController
   def index
     @titre = t('blog.titre') 
     @blogs = Blog.all
+
+    
   end
 
   # GET /blogs/1
