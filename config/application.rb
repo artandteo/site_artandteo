@@ -19,5 +19,7 @@ module ArtandteoSite
     I18n.enforce_available_locales = false
 	I18n.config.available_locales = :en
     I18n.config.default_locale = :fr
+
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
   end
 end
