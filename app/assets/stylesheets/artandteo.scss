@@ -6,8 +6,24 @@ $vert: #B8E986;
 $blanc: #FFFFFF;
 $gris_pale: #F2F2F2;
 
+$large_font: 'Rubik One', sans-serif;
+$light_font: 'Rajdhani', sans-serif;
+
 $navbar-default-bg: $blanc;
 $navbar-height: 80px;
+
+$btn-default-border: $orange;
+$btn-default-color: $orange;
+$btn-info-bg: $orange;
+$btn-info-color: $blanc;
+
+
+//---------------- GENERAL --------------------
+
+p, a, button {
+  font-family: $light_font !important;
+  font-size: 1.6rem !important;
+}
 
 //---------------- top-bar --------------------
 
@@ -101,4 +117,41 @@ $navbar-height: 80px;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+}
+
+// -------------- Title Bar -----------------
+
+.title-bar-home {
+  background: url(/img/accueil_title.jpg) no-repeat center center;
+  opacity: 0.9;
+  background-size: cover;
+  height: 435px;
+  .nom_resume {
+    padding: 30px 0 0 20px;
+  }
+  .slogan {
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 70px;
+  }
+  h1, h2, h3 {
+    color: $blanc;
+    font-family: $large_font;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: 0.1em 0.1em 0.2em black
+  }
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  .btn {
+    padding: 10px 80px 10px 80px;
+  }
+}
+
+.tryptic_1 {
+  
 }

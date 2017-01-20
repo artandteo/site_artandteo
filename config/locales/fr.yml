@@ -15,13 +15,17 @@ fr:
   pages:
     accueil:
       titre: Accueil
-    agence: 
+      creation_communication_digitale: Création & Communication digitale
+      slogan: Nous cultivons votre différence
+      nous_trouver: Nous trouver
+      nous_contacter: Nous contacter
+    agence:
       titre: Agence
     services:
       titre: Nos services
     strategie_digitale:
       titre: Stratégie digitale
-    web_developpement: 
+    web_developpement:
       titre: Web Développement
     community_manager:
       titre: Community manager
@@ -29,8 +33,7 @@ fr:
       titre: Réferencement
     realisations:
       titre: Nos réalisations
-    contact: 
+    contact:
       titre: Nous contacter
   blogs:
     titre: Blog
-

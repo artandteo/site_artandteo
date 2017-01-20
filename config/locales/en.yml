@@ -1,4 +1,4 @@
-en: 
+en:
   liens:
     accueil: Home
     agence: Agency
@@ -12,13 +12,17 @@ en:
   pages:
     accueil:
       titre: Welcome on the ArtandTeos website
-    agence: 
+      creation_communication_digitale: Création & Communication digitale
+      slogan: We care your difference
+      nous_trouver: Find us
+      nous_contacter: Join us
+    agence:
       titre: Agency
     services:
       titre: Our services
     strategie_digitale:
       titre: Digital strategy
-    web_developpement: 
+    web_developpement:
       titre: Web Developpement
     community_manager:
       titre: Cmmunity manager
@@ -26,7 +30,7 @@ en:
       titre: Search Engine Optimization
     realisations:
       titre: Our productions
-    contact: 
+    contact:
       titre: Contact us
   blogs:
     titre: Blog

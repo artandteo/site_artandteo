@@ -1,3 +1,33 @@
-<section class="title-bar">
-  <h1><%= t('pages.accueil.titre') %></h1>
+<section class="title-bar-home">
+  <div class="nom_resume">
+    <h1>ARTANDTEO</h1>
+    <h3><%= t('pages.accueil.creation_communication_digitale') %></h3>
+  </div>
+  <div class="slogan">
+    <h2><%= t('pages.accueil.slogan') %></h2>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-2 text-center">
+      <button type="button" class="btn btn-default"><%= t('pages.accueil.nous_trouver') %></button>
+    </div>
+    <div class="col-sm-3 col-sm-offset-2 text-center">
+      <button type="button" class="btn btn-info"><%= t('pages.accueil.nous_contacter') %></button>
+    </div>
+  </div>
+</section>
+
+<section class="tryptic">
+  <div class="row">
+    <%= for n in 1..3 do %>
+      <div class="col-sm-4">
+        <div class="tryptic_<%= n %>">
+          <h3><%= t('pages.accueil.title_tryp' + n.to_s) %></h3>
+          <img src="/img/tryp<%= n %>.png" alt="<%= t('pages.accueil.alt_tryp' + n.to_s) %>">
+          <hr>
+          <p><%= t('pages.accueil.texte_tryp' + n.to_s) %></p>
+        </div>
+      </div>
+    <% end %>
+    </div>
+  </div>
 </section>
