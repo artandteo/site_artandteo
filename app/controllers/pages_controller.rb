@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 	def accueil
-		@titre = t('pages.accueil.titre')
+		@titre = t('titre')
 	end
 
 	def agence
