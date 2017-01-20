@@ -11,6 +11,7 @@ $light_font: 'Rajdhani', sans-serif;
 
 $navbar-default-bg: $blanc;
 $navbar-height: 80px;
+$navbar-margin-bottom: 0;
 
 $btn-default-border: $orange;
 $btn-default-color: $orange;
@@ -20,10 +21,32 @@ $btn-info-color: $blanc;
 
 //---------------- GENERAL --------------------
 
-p, a, button {
+p, a, li, button, blockquote {
   font-family: $light_font !important;
   font-size: 1.6rem !important;
+  list-style-type: none;
+  color: $taupe !important;
 }
+
+h3 {
+  font-family: $light_font !important;
+  padding: 20px 0 30px 0;
+}
+
+h3:before, h3:after {
+  content: '';
+  width: 15em;
+  border-width: 1px !important;
+  border-bottom: $orange solid;
+  display: inline-block;
+  vertical-align: middle;
+}
+h3:before {
+  margin-left:-100%;
+  margin-right:1em}
+h3:after {
+  margin-right:-100%;
+  margin-left:1em;}
 
 //---------------- top-bar --------------------
 
@@ -98,6 +121,10 @@ p, a, button {
   text-align: center;
 }
 
+.navbar-left {
+  text-align: center !important;
+}
+
 //---------------- footer --------------------
 
 #newsletter {
@@ -127,15 +154,15 @@ p, a, button {
   }
   .slogan {
     text-align: center;
-    padding-top: 110px;
+    padding-top: 100px;
     padding-bottom: 70px;
   }
-  h1, h2, h3 {
+  h1, h2, h5 {
     color: $blanc;
     font-family: $large_font;
     margin-top: 0;
     margin-bottom: 0;
-    text-shadow: 0.1em 0.1em 0.2em black
+    text-shadow: 0.1em 0.1em 0.2em black;
   }
   h1 {
     font-size: 7rem;
@@ -143,11 +170,83 @@ p, a, button {
   h2 {
     font-size: 4rem;
   }
+  h5 {
+    font-size: 2.4rem;
+  }
   .btn {
     padding: 10px 80px 10px 80px;
   }
 }
 
-.tryptic_1 {
+// -------------- Page Accueil -----------------
 
+.tryptic {
+  margin: 30px 0 30px 0;
+  h3:before, h3:after {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+  }
+}
+
+@mixin tryp_h3 {
+  font-size: 2em;
+  text-shadow: 1px 1px 1px $taupe;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.tryptic_1 {
+  margin: 10px;
+  h3 {
+    color: $taupe;
+    @include tryp_h3;
+  }
+}
+.tryptic_2 {
+  margin: 0 10px 0 10px;
+  h3 {
+    color: $vert;
+    @include tryp_h3;
+  }
+}
+.tryptic_3 {
+  margin: 0 10px 0 10px;
+  h3 {
+    color: $orange;
+    @include tryp_h3;
+  }
+}
+
+.besoin {
+  background: url(/img/mb_phone.jpg) no-repeat center center;
+  opacity: 0.9;
+  background-size: cover;
+  height: 435px;
+}
+
+.map_google {
+  background: url(/img/map_google.jpg) no-repeat center center;
+  opacity: 0.9;
+  background-size: cover;
+  height: 435px;
+}
+
+.objectifs {
+  background-color: $gris_pale;
+}
+
+.passion {
+  .contact_card {
+    margin: 40px;
+  }
+}
+
+.outils {
+  padding: 20px 0 30px 0;
+  background-color: $gris_pale;
+  img {
+    margin: 0 10px 0 10px;
+  }
 }

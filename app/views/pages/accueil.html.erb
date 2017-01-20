@@ -1,7 +1,7 @@
 <section class="title-bar-home">
   <div class="nom_resume">
     <h1>ARTANDTEO</h1>
-    <h3><%= t('accueil.creation_communication_digitale') %></h3>
+    <h5><%= t('accueil.creation_communication_digitale') %></h5>
   </div>
   <div class="slogan">
     <h2><%= t('accueil.slogan') %></h2>
@@ -52,14 +52,92 @@
   <div class="row">
     <div class="col-sm-6 col-sm-offset-6">
       <div class="card_besoin">
-        <h3><%= t('accueil.titre_visib') %></h3>
+        <h4><%= t('accueil.titre_visib') %></h4>
         <p><%= t('accueil.txt_visib') %></p>
         <button type="button" class="btn btn-default"><%= t('savoir_plus') %></button>
       </div>
       <div class="card_besoin">
-        <h3><%= t('accueil.titre_besoin') %></h3>
-        <p><%= t('accueil.txt_besoin') %></p>
+        <h4><%= t('accueil.titre_besoin') %></h4>
+        <p><%= t('accueil.txt_besoin1') %></p>
+        <hr>
+        <p><%= t('accueil.txt_besoin2') %></p>
         <button type="button" class="btn btn-default"><%= t('savoir_plus') %></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="last_posts">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h3><%= t('accueil.titre_last_posts') %></h3>
+    </div>
+  </div>
+  <div class="row">
+    </div>
+      <div class="col-sm-6">
+        <!-- AVANT DERNIER POST -->
+      </div>
+      <div class="col-sm-6">
+        <!-- DERNIER POST -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="nous_trouver">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h3><%= t('accueil.titre_nous_trouver') %></h3>
+    </div>
+  </div>
+  <div class="map_google"></div>
+</section>
+
+<section class="passion">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h3><%= t('accueil.titre_passion') %></h3>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6 text-center">
+        <div class="contact_card">
+          <img class="img-circle" src="/img/fred.jpg" alt="Photo de Fred">
+          <hr>
+          <h4><%= t('accueil.titre_fred') %></h4>
+          <p><%= t('accueil.text_fred') %></p>
+        </div>
+      </div>
+      <div class="col-sm-6 text-center">
+        <div class="contact_card">
+          <img class="img-circle" src="/img/jp.jpg" alt="Photo de Fred">
+          <hr>
+          <h4><%= t('accueil.titre_jp') %></h4>
+          <p><%= t('accueil.text_jp') %></p>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="outils">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h3><%= t('accueil.titre_outils') %></h3>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6 text-right">
+        <img src="/img/icons/logo_ruby.png" alt="logo Ruby">
+        <img src="/img/icons/logo_rails.png" alt="logo Rails">
+        <img src="/img/icons/logo_sketch.png" alt="logo Sketch Bohemian Coding">
+        <img src="/img/icons/logo_atom.png" alt="logo Atom IDE">
+      </div>
+      <div class="col-sm-6 text-left">
+        <img src="/img/icons/logo_wordpress.png" alt="logo Wordpress">
+        <img src="/img/icons/logo_drupal.png" alt="logo Drupal">
+        <img src="/img/icons/logo_magento.png" alt="logo Magento e-commerce">
+        <img src="/img/icons/logo_analytics.png" alt="logo Google Analytics">
       </div>
     </div>
   </div>
