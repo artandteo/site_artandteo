@@ -74,13 +74,22 @@
     </div>
   </div>
   <div class="row">
+    <div class="col-md-6">
+      <!-- AVANT DERNIER POST -->
     </div>
-      <div class="col-md-6">
-        <!-- AVANT DERNIER POST -->
-      </div>
-      <div class="col-md-6">
+
+    <div class="col-md-6">
+
         <!-- DERNIER POST -->
-      </div>
+        <img src="<%= @last_post.image %>" alt="<%= @last_post.image_legende %>" width="320px" height="240" />
+        <br />
+        <h2><%= @last_post.titre %></h2>
+        <p>Posté le <%= @last_post.created_at %></p></p>
+        <p>
+          <%= raw @last_post.contenu.truncate(250) %>
+          <br/>
+          <a href="<%= blog_path(@last_post) %>" alt="<%= @last_post.titre %>" class="btn btn-primary">Lire plus</a>
+        </p>
     </div>
   </div>
 </section>
