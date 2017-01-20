@@ -1,37 +1,37 @@
 class PagesController < ApplicationController
 	def accueil
-		@titre = t('titre')
+		@titre = t('accueil.titre')
 	end
 
 	def agence
-		@titre = t('pages.agence.titre')
+		@titre = t('agence.titre')
 	end
 
 	def services
-		@titre = t('pages.services.titre')
+		@titre = t('services.titre')
 	end
 
 	def strategie_digitale
-		@titre = t('pages.strategie_digitale.titre')
+		@titre = t('strategie_digitale.titre')
 	end
 
 	def web_developpement
-		@titre = t('pages.web_developpement.titre')
+		@titre = t('web_developpement.titre')
 	end
 
 	def community_manager
-		@titre = t('pages.community_manager.titre')
+		@titre = t('community_manager.titre')
 	end
 
 	def referencement
-		@titre = t('pages.referencement.titre')
+		@titre = t('referencement.titre')
 	end
 
 	def realisations
-		@titre = t('pages.realisations.titre')
+		@titre = t('realisations.titre')
 	end
 
 	def contact
-		@titre = t('pages.contact.titre')
+		@titre = t('contact.titre')
 	end
 end

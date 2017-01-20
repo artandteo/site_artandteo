@@ -39,8 +39,6 @@ gem 'mini_magick'
 # bootstrap SASS
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-sass', '~> 4.7.0'
-
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

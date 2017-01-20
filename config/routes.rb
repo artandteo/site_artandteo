@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root 'pages#accueil'
   scope "(/:locale)", locale: /en/ do
     get '/:locale' => 'pages#accueil'
@@ -6,7 +7,7 @@ Rails.application.routes.draw do
     get '/services', to: 'pages#services', as: :services
     get '/services/strategie-digitale', to: 'pages#strategie_digitale', as: :strategie_digitale
     get '/services/web-developpement', to: 'pages#web_developpement', as: :web_developpement
-    get '/services/community-management', to: 'pages#community_management', as: :community_management
+    get '/services/community-management', to: 'pages#community_manager', as: :community_management
     get '/services/referencement', to: 'pages#referencement', as: :referencement  
     
     get '/realisations', to: 'pages#portfolio', as: :portfolio
@@ -19,8 +20,8 @@ Rails.application.routes.draw do
     # admin pagelocale temporaire en attendant tous le système
     get '/admin', to: 'admins#accueil', as: :admin
 
-    # articles du blog
-    resources :blog_posts
+    resources :blogs
+
   end
 
   # ckeditor
