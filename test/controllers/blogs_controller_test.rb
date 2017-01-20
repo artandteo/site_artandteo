@@ -17,7 +17,7 @@ class BlogsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create blog" do
     assert_difference('Blog.count') do
-      post blogs_url, params: { blog: { content: @blog.content, title: @blog.title } }
+      post blogs_url, params: { blog: { contenu: @blog.contenu, image: @blog.image, image_legende: @blog.image_legende, titre: @blog.titre } }
     end
 
     assert_redirected_to blog_url(Blog.last)
@@ -34,7 +34,7 @@ class BlogsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update blog" do
-    patch blog_url(@blog), params: { blog: { content: @blog.content, title: @blog.title } }
+    patch blog_url(@blog), params: { blog: { contenu: @blog.contenu, image: @blog.image, image_legende: @blog.image_legende, titre: @blog.titre } }
     assert_redirected_to blog_url(@blog)
   end
 
