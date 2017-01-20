@@ -12,8 +12,8 @@ module ArtandteoSite
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    config.assets.precompile += Ckeditor.assets
-    config.assets.precompile += %w( ckeditor/* )
+    #config.assets.precompile += Ckeditor.assets
+    #config.assets.precompile += %w( ckeditor/* )
     config.autoload_paths += %w(#{config.root}/app/models/ckeditor)
 
     I18n.enforce_available_locales = false

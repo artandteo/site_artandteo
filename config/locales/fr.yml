@@ -1,4 +1,7 @@
 fr: 
+  time:
+    formats:
+      short: "%H%i"
   liens:
     accueil: Accueil
     agence: Agence
