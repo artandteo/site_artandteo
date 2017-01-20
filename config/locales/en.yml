@@ -9,6 +9,8 @@ en:
     referencement: SEO
     realisations: Productions
     contact: Contact
+  footer:
+    inscrire_newsletter: Newsletter signin
   pages:
     accueil:
       titre: Welcome on the ArtandTeos website
@@ -16,6 +18,20 @@ en:
       slogan: We care your difference
       nous_trouver: Find us
       nous_contacter: Join us
+      title_tryp1: DESIGN
+      title_tryp2: DEVELOP
+      title_tryp3: DIFFUSE
+      alt_tryp1: Design
+      alt_tryp2: Develope
+      alt_tryp3: Diffuse
+      texte_tryp1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+      texte_tryp2: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+      texte_tryp3: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+      objectif: Our goals
+      first: To be sure your investment is good
+      second: Really listen what you need
+      third: Deliver you the best
+      txt_objectif: To design a website is today is quite easy. But, if you ever tried, you certainly discovered that the design is not the only things you need to do. You also have to update, hold on and diffuse your website.
     agence:
       titre: Agency
     services:

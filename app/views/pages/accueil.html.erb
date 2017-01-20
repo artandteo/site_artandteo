@@ -1,33 +1,66 @@
 <section class="title-bar-home">
   <div class="nom_resume">
     <h1>ARTANDTEO</h1>
-    <h3><%= t('pages.accueil.creation_communication_digitale') %></h3>
+    <h3><%= t('accueil.creation_communication_digitale') %></h3>
   </div>
   <div class="slogan">
-    <h2><%= t('pages.accueil.slogan') %></h2>
+    <h2><%= t('accueil.slogan') %></h2>
   </div>
   <div class="row">
     <div class="col-sm-3 col-sm-offset-2 text-center">
-      <button type="button" class="btn btn-default"><%= t('pages.accueil.nous_trouver') %></button>
+      <button type="button" class="btn btn-default"><%= t('accueil.nous_trouver') %></button>
     </div>
     <div class="col-sm-3 col-sm-offset-2 text-center">
-      <button type="button" class="btn btn-info"><%= t('pages.accueil.nous_contacter') %></button>
+      <button type="button" class="btn btn-info"><%= t('accueil.nous_contacter') %></button>
     </div>
   </div>
 </section>
 
 <section class="tryptic">
   <div class="row">
-    <%= for n in 1..3 do %>
-      <div class="col-sm-4">
+    <% for n in 1..3 do %>
+      <div class="col-sm-4 text-center">
         <div class="tryptic_<%= n %>">
-          <h3><%= t('pages.accueil.title_tryp' + n.to_s) %></h3>
-          <img src="/img/tryp<%= n %>.png" alt="<%= t('pages.accueil.alt_tryp' + n.to_s) %>">
+          <h3><%= t('accueil.title_tryp' + n.to_s) %></h3>
+          <img src="/img/tryp<%= n %>.png" alt="<%= t('accueil.alt_tryp' + n.to_s) %>">
           <hr>
-          <p><%= t('pages.accueil.texte_tryp' + n.to_s) %></p>
+          <p><%= t('accueil.texte_tryp' + n.to_s) %></p>
         </div>
       </div>
     <% end %>
+    </div>
+  </div>
+</section>
+
+<section class="objectifs">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h3><%= t('accueil.objectif') %></h3>
+      <ul>
+        <li><%= t('accueil.first') %></li>
+        <li><%= t('accueil.second') %></li>
+        <li><%= t('accueil.third') %></li>
+      </ul>
+      <blockquote>
+        <%= t('accueil.txt_objectif') %>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="besoin">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-6">
+      <div class="card_besoin">
+        <h3><%= t('accueil.titre_visib') %></h3>
+        <p><%= t('accueil.txt_visib') %></p>
+        <button type="button" class="btn btn-default"><%= t('savoir_plus') %></button>
+      </div>
+      <div class="card_besoin">
+        <h3><%= t('accueil.titre_besoin') %></h3>
+        <p><%= t('accueil.txt_besoin') %></p>
+        <button type="button" class="btn btn-default"><%= t('savoir_plus') %></button>
+      </div>
     </div>
   </div>
 </section>

@@ -1,4 +1,4 @@
-fr: 
+fr:
   time:
     formats:
       short: "%H%i"
@@ -12,6 +12,8 @@ fr:
     referencement: Référencement
     realisations: Réalisations
     contact: Contact
+  footer:
+    inscrire_newsletter: S'inscrire à la newsletter
   pages:
     accueil:
       titre: Accueil
@@ -19,6 +21,20 @@ fr:
       slogan: Nous cultivons votre différence
       nous_trouver: Nous trouver
       nous_contacter: Nous contacter
+      title_tryp1: CREER
+      title_tryp2: DEVELOPPER
+      title_tryp3: DIFFUSER
+      alt_tryp1: Créer
+      alt_tryp2: Développer
+      alt_tryp3: Diffuser
+      texte_tryp1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+      texte_tryp2: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+      texte_tryp3: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+      objectif: Nos objectifs
+      first: S’assurer de la rentabilité de votre investissement
+      second: Ecouter réellement votre besoin
+      third: Vous offrir une réalisation irréprochable
+      txt_objectif: Créer un site internet est devenu chose accessible. Pourtant, si vous avez déjà tenté l’expérience, vous vous serez sans doute rendu compte qu’il ne suffit pas de le créer. Il faudra aussi entretenir votre site, le mettre à jour, le référencer constamment afin qu’il suive l’évolution de votre entreprise. Créer un site internet professionnel avec des médias de hautes qualités et un contenu pertinent n’est pas non plus chose facile. 
     agence:
       titre: Agence
     services:
