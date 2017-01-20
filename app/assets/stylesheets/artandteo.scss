@@ -21,11 +21,16 @@ $btn-info-color: $blanc;
 
 //---------------- GENERAL --------------------
 
-p, a, li, button, blockquote {
+p, a, li, blockquote {
   font-family: $light_font !important;
   font-size: 1.6rem !important;
   list-style-type: none;
   color: $taupe !important;
+}
+
+button {
+  font-family: $light_font !important;
+  font-size: 1.6rem !important;
 }
 
 h3 {
@@ -128,12 +133,17 @@ h3:after {
 //---------------- footer --------------------
 
 #newsletter {
-
+  padding-bottom: 30px;
 }
 
 #social-footer {
   background-color: $taupe;
-  height: 100px;
+  padding: 20px 0 20px 0;
+  span {
+    img {
+      padding: 0 7px 0 7px;
+    }
+  }
 }
 
 #menu-footer {

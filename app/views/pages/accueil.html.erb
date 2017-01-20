@@ -7,10 +7,10 @@
     <h2><%= t('accueil.slogan') %></h2>
   </div>
   <div class="row">
-    <div class="col-sm-3 col-sm-offset-2 text-center">
+    <div class="col-md-3 col-md-offset-2 text-center">
       <button type="button" class="btn btn-default"><%= t('accueil.nous_trouver') %></button>
     </div>
-    <div class="col-sm-3 col-sm-offset-2 text-center">
+    <div class="col-md-3 col-md-offset-2 text-center">
       <button type="button" class="btn btn-info"><%= t('accueil.nous_contacter') %></button>
     </div>
   </div>
@@ -19,7 +19,7 @@
 <section class="tryptic">
   <div class="row">
     <% for n in 1..3 do %>
-      <div class="col-sm-4 text-center">
+      <div class="col-md-4 text-center">
         <div class="tryptic_<%= n %>">
           <h3><%= t('accueil.title_tryp' + n.to_s) %></h3>
           <img src="/img/tryp<%= n %>.png" alt="<%= t('accueil.alt_tryp' + n.to_s) %>">
@@ -34,7 +34,7 @@
 
 <section class="objectifs">
   <div class="row">
-    <div class="col-sm-12 text-center">
+    <div class="col-md-12 text-center">
       <h3><%= t('accueil.objectif') %></h3>
       <ul>
         <li><%= t('accueil.first') %></li>
@@ -50,7 +50,7 @@
 
 <section class="besoin">
   <div class="row">
-    <div class="col-sm-6 col-sm-offset-6">
+    <div class="col-md-6 col-md-offset-6">
       <div class="card_besoin">
         <h4><%= t('accueil.titre_visib') %></h4>
         <p><%= t('accueil.txt_visib') %></p>
@@ -69,16 +69,16 @@
 
 <section class="last_posts">
   <div class="row">
-    <div class="col-sm-12 text-center">
+    <div class="col-md-12 text-center">
       <h3><%= t('accueil.titre_last_posts') %></h3>
     </div>
   </div>
   <div class="row">
     </div>
-      <div class="col-sm-6">
+      <div class="col-md-6">
         <!-- AVANT DERNIER POST -->
       </div>
-      <div class="col-sm-6">
+      <div class="col-md-6">
         <!-- DERNIER POST -->
       </div>
     </div>
@@ -87,7 +87,7 @@
 
 <section class="nous_trouver">
   <div class="row">
-    <div class="col-sm-12 text-center">
+    <div class="col-md-12 text-center">
       <h3><%= t('accueil.titre_nous_trouver') %></h3>
     </div>
   </div>
@@ -96,12 +96,12 @@
 
 <section class="passion">
   <div class="row">
-    <div class="col-sm-12 text-center">
+    <div class="col-md-12 text-center">
       <h3><%= t('accueil.titre_passion') %></h3>
     </div>
   </div>
   <div class="row">
-      <div class="col-sm-6 text-center">
+      <div class="col-md-6 text-center">
         <div class="contact_card">
           <img class="img-circle" src="/img/fred.jpg" alt="Photo de Fred">
           <hr>
@@ -109,7 +109,7 @@
           <p><%= t('accueil.text_fred') %></p>
         </div>
       </div>
-      <div class="col-sm-6 text-center">
+      <div class="col-md-6 text-center">
         <div class="contact_card">
           <img class="img-circle" src="/img/jp.jpg" alt="Photo de Fred">
           <hr>
@@ -121,24 +121,23 @@
 </section>
 
 <section class="outils">
-  <div class="row">
-    <div class="col-sm-12 text-center">
-      <h3><%= t('accueil.titre_outils') %></h3>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3><%= t('accueil.titre_outils') %></h3>
+      </div>
     </div>
-  </div>
-  <div class="row">
-      <div class="col-sm-6 text-right">
+    <div class="row">
+      <div class="col-md-6 text-right">
         <img src="/img/icons/logo_ruby.png" alt="logo Ruby">
         <img src="/img/icons/logo_rails.png" alt="logo Rails">
         <img src="/img/icons/logo_sketch.png" alt="logo Sketch Bohemian Coding">
         <img src="/img/icons/logo_atom.png" alt="logo Atom IDE">
       </div>
-      <div class="col-sm-6 text-left">
+      <div class="col-md-6 text-left">
         <img src="/img/icons/logo_wordpress.png" alt="logo Wordpress">
         <img src="/img/icons/logo_drupal.png" alt="logo Drupal">
         <img src="/img/icons/logo_magento.png" alt="logo Magento e-commerce">
         <img src="/img/icons/logo_analytics.png" alt="logo Google Analytics">
       </div>
     </div>
-  </div>
 </section>
