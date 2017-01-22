@@ -9,7 +9,7 @@ fr:
     mentions_legales: Mentions légales
     social_wall: Social wall
     connexion: Connexion
-    tous_droits_reserves: Tous droits réservés
+    tous_droits_reserves: ArtandTeo Tous droits réservés
     title_tryp1: CREER
     title_tryp2: DEVELOPPER
     title_tryp3: DIFFUSER
@@ -33,3 +33,10 @@ fr:
     txt_besoin1: Créez un partenariat effectif, adapté à vos besoins, avec un prestataire qui vous accompagne dans de nouvelles exigences.
     txt_besoin2: Ne pas développer de stratégie digitale aujourd’hui c’est délaisser un très grand segment d’audience pour votre entreprise.
     titre_last_posts: Derniers Posts
+    titre_nous_trouver: Nous trouver
+    titre_passion: Les passionnés
+    titre_fred: Fred
+    text_fred: Lorem ipsum dolor sit amet, consectetur adipisicing
+    titre_jp: Jean-Pierre
+    text_jp: Lorem ipsum dolor sit amet, consectetur adipisicing
+    titre_outils: Nos outils préférés

@@ -13,10 +13,10 @@
           <%= f.text_field :name, class: "form-control", placeholder: "Votre nom" %><br />
       </div>
       <div class="col-md-4">
-          <%= f.text_field :email, class: "form-control", placeholder: "Votre email" %><br />
+          <%= f.email_field :email, class: "form-control", placeholder: "Votre email" %><br />
       </div>
       <div class="col-md-1">
-          <%= f.submit "Ok", class: "form-control btn-info" %>
+          <%= f.submit "Ok", class: "form-control btn-default" %>
       </div>
       <% end %>
     </div>

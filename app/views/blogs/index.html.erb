@@ -1,33 +1,38 @@
+<div class="content">
+
 <p id="notice"><%= notice %></p>
 
-<h1>Blogs</h1>
+<h1>Blogs <span class="btn btn-default"><%= link_to 'Ecrire un nouveau post', new_blog_path %></span></h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Titre</th>
-      <th>Contenu</th>
-      <th>Image</th>
-      <th>Image legende</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.titre %></td>
-        <td><%= raw blog.contenu %></td>
-        <td><%= blog.image %></td>
-        <td><%= blog.image_legende %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<br />
 
-<br>
+<div class="row col-centered">
+  <% @blogs.each do |blog|%>
+      <div class="col-sm-4 spacing">
+        <div class="post col-centered">
+          <img class="img-responsive" src="<%= blog.image %>" alt="<%= blog.image_legende %>">
+          <div class="text_post col-centered">
+            <h2><%= blog.titre %></h2>
+            <p class="d_post">Posté le <%= blog.created_at %></p>
+            <div class="contenu"><%= raw(blog.contenu).truncate(250) %></div>
+            <div class="sav_plus row col-centered">
+              <div class="col-sm-4 col-centered">
+                <form action="<%= blog_path(blog) %>">
+                  <button class="btn btn-default" type="submit" value="<%= blog.titre %>">Lire plus</button>
+                </form>
+              </div>
+              <div class="col-sm-4 col-centered">
+                <%= link_to 'Editer', edit_blog_path(blog), class: "btn btn-primary" %>
+              </div>
+              <div class="col-sm-4 col-centered">
+                <%= link_to 'Supprimer', blog, method: :delete, data: { confirm: 'Êtes-vous sûr?' }, class: "btn btn-danger" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <% end %>
 
-<%= link_to 'New Blog', new_blog_path %>
+</div>
+</div>

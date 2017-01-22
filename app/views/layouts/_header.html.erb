@@ -34,9 +34,9 @@
      <!-- Collect the nav links, forms, and other content for toggling -->
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
        <div class="row">
-       <div class="col-md-5 text-center">
-         <ul class="nav navbar-nav navbar-left">
-           <li class="active"><a href="<%= root_path %>"><%= t('liens.accueil') %> <span class="sr-only">(current)</span></a></li>
+       <div class="col-sm-5 text-center">
+         <ul class="nav navbar-nav navbar-right">
+           <li><a href="<%= root_path %>"><%= t('liens.accueil') %> <span class="sr-only">(current)</span></a></li>
            <li><a class="separator"></a></li>
            <li><a href="<%= agence_path %>"><%= t('liens.agence') %></a></li>
            <li><a class="separator"></a></li>
@@ -51,13 +51,13 @@
            </li>
          </ul>
        </div>
-       <div id="logo_at" class="col-md-2">
+       <div id="logo_at" class="col-sm-2">
          <a class="" href="<%= root_path %>">
            <img alt="Logo ArtandTeo" src="/img/logfb-ArtandTeo.png">
          </a>
        </div>
-       <div class= "col-md-5 center">
-         <ul class="nav navbar-nav navbar-right">
+       <div class= "col-sm-5 text-center navbar-left">
+         <ul class="nav navbar-nav">
            <li><a href="<%= portfolio_path %>"><%= t('liens.realisations') %></a></li>
            <li><a class="separator"></a></li>
            <li><a href="<%= blogs_path %>"><%= t('blog.titre') %></a></li>
