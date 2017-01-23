@@ -1,56 +1,45 @@
-<div class="row">
-  <div class="col-sm-12">
+<div class="row bandeau_titre">
+  <div class="col-sm-12 text-center">
     <h1><%= t('realisations.titre') %></h1>
   </div>
 </div>
 
+<div class="content">
 <div class="row">
-  <div class="col-sm-12">
-    <h2 style="text-align: center;">Quelques exemples de réalisations par ArtandTéo</h2>
-  </div>
-</div>
-<hr />
-<div class="row">
-  <div class="col-sm-12">
-    <p>Aujourd'hui un site web doit être visible aussi bien sur ordinateurs de bureau, téléphones mobiles et tablettes. Pour cette raison les sites internet d'ArtandTéo sont tous responsives.</p>
+  <div class="col-sm-12 text-center">
+    <p><%= t('realisations.sous_titre') %></p>
   </div>
 </div>
 
+<% for n in 1..1 do %>
+
+<hr /> <!-- 1ER EXEMPLE -->
+
 <div class="row">
   <div class="col-sm-12">
-    <h3>Nom : Rachel Sculptures</h3>
+    <h4><%= t('realisations.nom_site_' + n.to_s) %></h4>
   </div>
 </div>
 <div class="row">
   <div class="col-sm-12">
-    Url : <a href="http://www.rachel-sculptures.com" target="_blank">http://www.rachel-sculptures.com</a>
-
+    <p>Url : <a href="<%= t('realisations.url_' + n.to_s) %>" target="_blank"><%= t('realisations.url_' + n.to_s) %></a></p>
+    <p><%= t('realisations.type_' + n.to_s) %></p>
+    <p><%= t('realisations.content_' + n.to_s) %></p>
   </div>
 </div>
 
-
-Type : Site d'artiste
-
-Rachel Painchaud est une artiste autodidacte, elle découvre l’art du modelage il y a une vingtaine d’année. Son souhait est de tendre vers l’expressionnisme pour inspirer au spectateur une vive réaction émotionnelle.
-
-Ce site a pour but de communiquer avec les internautes sur les réalisations et les événements autour de l'activité de Rachel. Ensemble, nous avons choisi, de développer son site avec le CMS Wordpress. Il est ainsi aisé d'ajouter des articles sur des événements futurs ou passés. Cet ajout régulier d'articles renforce la présence du site dans les moteurs de recherches.<a href="http://artandteo.com/wp-content/uploads/2016/06/mobile-rachel_painchaud.jpg">
-</a>
-
-&nbsp;
 <div class="row">
-<div class="col-md-6">
-
-<a href="http://www.rachel-sculptures.com" target="_blank"><img class="aligncenter wp-image-115 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/rachel_painchaud-1.jpg" alt="Vue bureau Rachel Sculptures" width="350" height="248" /></a>
-<p style="text-align: center;">Vue Desktop</p>
-
+  <div class="col-md-6 text-center">
+    <a href="<%= t('realisations.url_' + n.to_s) %>" target="_blank"><img class="aligncenter wp-image-115 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/rachel_painchaud-1.jpg" alt="Vue bureau Rachel Sculptures" width="350" height="248" /></a>
+    <p style="text-align: center;"><%= t('realisations.leg_desk') %></p>
+  </div>
+  <div class="col-md-6 text-center">
+    <a href="<%= t('realisations.url_' + n.to_s) %>" target="_blank"><img class="aligncenter wp-image-117 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/mobile-rachel_painchaud-e1466774688906.jpg" alt="Vue sur mobile site Rachel Sculptures" width="140" height="248" /></a>
+    <p style="text-align: center;"><%= t('realisations.leg_mob') %></p>
+  </div>
 </div>
-<div class="col-md-6">
 
-<a href="http://www.rachel-sculptures.com" target="_blank"><img class="aligncenter wp-image-117 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/mobile-rachel_painchaud-e1466774688906.jpg" alt="Vue sur mobile site Rachel Sculptures" width="140" height="248" /></a>
-<p style="text-align: center;">Vue Mobile</p>
-
-</div>
-</div>
+<% end %>
 
 <hr />
 
@@ -166,3 +155,5 @@ Le salon de coiffure Anamé se situe à Evron en Mayenne. L'objectif du client e
 
 <hr />
 <p style="text-align: right;"><a href="http://www.artandteo.com/contact/">... nous contacter &gt;</a></p>
+
+</div>
