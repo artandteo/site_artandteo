@@ -78,42 +78,25 @@
     </div>
   </div>
   <div class="row">
-
-    <div class="col-md-6"> <!-- AVANT DERNIER POST -->
-      <div class="post">
-        <img class="img-responsive" src="<%= @before_last_post.image %>" alt="<%= @before_last_post.image_legende %>" />
-        <div class="text_post">
-          <h2><%= @before_last_post.titre %></h2>
-          <p class="d_post">Posté le <%= @before_last_post.created_at %></p>
-          <div class="contenu"><%= raw(@before_last_post.contenu).strip.truncate(250) %></div>
-          <div class="sav_plus">
-            <form action="<%= blog_path(@before_last_post) %>">
-              <button type="submit" value="<%= @before_last_post.titre %>" class="btn btn-default">Lire plus</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6"> <!-- DERNIER POST -->
-      <div class="post">
-          <img class="img-responsive" src="<%= @last_post.image %>" alt="<%= @last_post.image_legende %>" />
-
+    <% @last_post.reverse_each do |post| %>
+      <div class="col-md-6">
+        <div class="post">
+          <img class="img-responsive" src="<%= post.image %>" alt="<%= post.image_legende %>" />
           <div class="text_post">
-            <h2><%= @last_post.titre %></h2>
-            <p class="d_post">Posté le <%= @last_post.created_at %></p>
-            <div class="contenu"><%= raw(@last_post.contenu).truncate(250) %></div>
+            <h2><%= post.titre %></h2>
+            <p class="d_post">Posté le <%= post.created_at.strftime('%d/%m/%Y à %H:%M') %></p>
+            <div class="contenu">
+            <%= raw (sanitize remove_tags(post.contenu), tags: %w(p)).truncate(250) %>
+            </div>
             <div class="sav_plus">
-              <form action="<%= blog_path(@last_post) %>">
-                <button type="submit" value="<%= @last_post.titre %>" class="btn btn-default">Lire plus</button>
+              <form action="<%= blog_path(post) %>">
+                <button type="submit" value="<%= post.titre %>" class="btn btn-default">Lire plus</button>
               </form>
             </div>
-            </p>
-          </div>
-
+        </div>
+        </div>
       </div>
-    </div>
-
+    <% end %>
   </div>
 </section>
 
