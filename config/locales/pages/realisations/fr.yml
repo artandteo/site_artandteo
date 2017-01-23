@@ -1,3 +1,18 @@
 fr:
   realisations:
     titre: Nos réalisations
+    sous_titre: Aujourd'hui un site web doit être visible aussi bien sur ordinateurs de bureau, téléphones mobiles et tablettes. Pour cette raison les sites internet d'ArtandTéo sont tous responsives.
+    leg_desk: Vue Desktop
+    leg_mob: Vue Mobile
+    nom_site_1: "Nom : Rachel Launay-Painchaud Sculptures"
+    url_1: "http://www.rachel-sculptures.com"
+    type_1: "Type : Site d'artiste"
+    content_1: Rachel Launay-Painchaud est une artiste autodidacte, elle découvre l’art du modelage il y a une vingtaine d’année.
+               Son souhait est de tendre vers l’expressionnisme pour inspirer au spectateur une vive réaction émotionnelle.
+               Ce site a pour but de communiquer avec les internautes sur les réalisations et les événements autour de l'activité de Rachel.
+               Ensemble, nous avons choisi, de développer son site avec le CMS Wordpress. Il est ainsi aisé d'ajouter des articles sur des événements futurs ou passés.
+               Cet ajout régulier d'articles renforce la présence du site dans les moteurs de recherches.
+    image_desk_1: "/img/rachel_desk.jpg"
+    image_mob_1: "/img/rachel_mob.jpg"
+    alt_desk_1: Vue bureau Rachel Sculptures
+    alt_mob_1: Vue sur mobile site Rachel Sculptures
