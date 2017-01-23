@@ -11,7 +11,7 @@ $light_font: 'Rajdhani', sans-serif;
 
 $text-color: $taupe;
 $link-color: $taupe;
-$link-hover-color: $gris_pale;
+$link-hover-color: lighten($taupe,20%);
 $link-hover-decoration: none;
 
 $font-size-base: 16px;
@@ -33,13 +33,13 @@ $screen-lg: 1600px;
 //---------------- GENERAL --------------------
 
 div.content {
-  margin: 0 20px 0 20px;
+  margin: 0 70px 0 70px;
 }
 
 @mixin bandeau {
   opacity: 0.9;
-  background-size: cover;
   height: 200px;
+  background-size: cover;
   margin-bottom: 30px;
   h1 {
     color: $blanc;
@@ -65,6 +65,12 @@ p, a, li, blockquote {
   font-size: 1.6rem;
   list-style-type: none;
   color: $taupe;
+}
+
+figcaption {
+  font-family: $light_font;
+  font-size: 1.4rem;
+  color: lighten($taupe,20%);
 }
 
 a:hover {
@@ -383,6 +389,24 @@ li.active > a::after {
   img {
     margin: 0 10px 0 10px;
   }
+}
+
+// -------------- Page Blog -----------------
+
+figure.blog_image {
+  float: left;
+  padding: 0 20px 10px 0;
+  img {
+    width: 320px;
+  }
+}
+
+
+// -------------- Page Contact -----------------
+
+.bandeau_contact {
+  @include bandeau;
+  background: url(/img/bandeau_3.jpg) no-repeat center center;
 }
 
 /* Extra small devices (phones, less than 768px) */

@@ -1,6 +1,14 @@
-<h1>Editing Blog</h1>
+<div class="row bandeau_blog">
+  <div class="col-sm-12 text-center">
+    <h1>Editon des articles</h1>
+  </div>
+</div>
+
+<div class="content">
 
 <%= render 'form', blog: @blog %>
 
-<%= link_to 'Show', @blog %> |
-<%= link_to 'Back', blogs_path %>
+<%= link_to 'Aperçu', @blog %> |
+<%= link_to "Retour à l'index", blogs_path %>
+
+</div>

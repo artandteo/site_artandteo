@@ -11,9 +11,9 @@
   </div>
 </div>
 
-<% for n in 1..1 do %>
+<% for n in 1..5 do %>
 
-<hr /> <!-- 1ER EXEMPLE -->
+<hr />
 
 <div class="row">
   <div class="col-sm-12">
@@ -25,135 +25,19 @@
     <p>Url : <a href="<%= t('realisations.url_' + n.to_s) %>" target="_blank"><%= t('realisations.url_' + n.to_s) %></a></p>
     <p><%= t('realisations.type_' + n.to_s) %></p>
     <p><%= t('realisations.content_' + n.to_s) %></p>
+    <p><%= t('realisations.contentb_' + n.to_s) %></p>
   </div>
 </div>
-
+<br />
 <div class="row">
   <div class="col-md-6 text-center">
-    <a href="<%= t('realisations.url_' + n.to_s) %>" target="_blank"><img class="aligncenter wp-image-115 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/rachel_painchaud-1.jpg" alt="Vue bureau Rachel Sculptures" width="350" height="248" /></a>
+    <a href="<%= t('realisations.url_' + n.to_s) %>" target="_blank"><img class="aligncenter wp-image-115 size-full" src="<%= t('realisations.image_desk_' + n.to_s) %>" alt="<%= t('realisations.alt_desk_' + n.to_s) %>" width="350" height="248" /></a>
     <p style="text-align: center;"><%= t('realisations.leg_desk') %></p>
   </div>
   <div class="col-md-6 text-center">
-    <a href="<%= t('realisations.url_' + n.to_s) %>" target="_blank"><img class="aligncenter wp-image-117 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/mobile-rachel_painchaud-e1466774688906.jpg" alt="Vue sur mobile site Rachel Sculptures" width="140" height="248" /></a>
+    <a href="<%= t('realisations.url_' + n.to_s) %>" target="_blank"><img class="aligncenter wp-image-117 size-full" src="<%= t('realisations.image_mob_' + n.to_s) %>" alt="<%= t('realisations.alt_mob_' + n.to_s) %>" width="140" height="248" /></a>
     <p style="text-align: center;"><%= t('realisations.leg_mob') %></p>
   </div>
 </div>
 
 <% end %>
-
-<hr />
-
-&nbsp;
-<h3>Nom : Destination Traduction</h3>
-Url : <a href="http://www.destination-traduction.com" target="_blank">http://www.destination-traduction.com</a>
-
-Type : Site PME multilingues Responsive
-
-Destination Traduction est un cabinet de traduction géré par Isabelle Garnier-Reubrecht qui réalise des documents en allemand, anglais, français dans les secteurs de la communication, de la technologie et du textile.
-
-Le CMS Drupal a été retenu pour réaliser ce site internet. Ce CMS est moins sujet aux attaques pirates mais est plus complexe à utiliser. Les droits et accès des utilisateurs sont gérés d'origine dans ce CMS ce qui le rend bien adapté aux PME. Chaque utilisateur peut avoir accès à une seule partie du site pour modifications.
-
-Le contenu du site a été traduit par le client. Art and Téo a intégré le contenu et réalisé le logo, icônes et infographies. Le référencement nous a été confié dans la durée avec pour objectif d'obtenir une visibilité en France, Allemagne et au Royaume Uni.
-
-&nbsp;
-<div class="row">
-<div class="col-md-6">
-
-<a href="http://www.destination-traduction.com" target="_blank"><img class="aligncenter wp-image-127 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/destination-traduction.jpg" alt="vue-desktop-destination-traduction" width="350" height="240" /></a>
-<p style="text-align: center;">Vue Desktop</p>
-
-</div>
-<div class="col-md-6">
-
-<a href="http://www.destination-traduction.com" target="_blank"><img class="aligncenter wp-image-128 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/mobile-destination-traduction.jpg" alt="vue-mobile-destination-traduction" width="135" height="240" /></a>
-<p style="text-align: center;">Vue Mobile</p>
-
-</div>
-</div>
-
-<hr />
-
-&nbsp;
-<h3>Nom : Via Tutti</h3>
-Url : <a href="http://www.viatutti.com" target="_blank">http://www.viatutti.com</a>
-
-Type : Site PME
-
-Via Tutti est une société d'Assistance à Maîtrise d'Ouvrage. A chacun de ses clients, son dirigeant devait citer ses références et son expérience. Il nous a demandé de réaliser un site internet présentant son métier et son entreprise afin  que ses clients puissent le consulter librement après leur entretien. Il a ainsi obtenu un gain de temps dans chacun de ses rendez-vous.
-
-Via Tutti ne nécessite actuellement pas d'une présence dans les moteurs de recherche. Nous avons réalisé ce site web sans CMS avec le framework de Bootstrap pour sa responsivité.
-
-&nbsp;
-<div class="row">
-<div class="col-md-6">
-
-<a href="http://www.viatutti.com" target="_blank"><img class="aligncenter wp-image-68 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/viatutti.jpg" alt="Vue desktop du site Via Tutti" width="350" height="248" /></a>
-<p style="text-align: center;">Vue Desktop</p>
-
-</div>
-<div class="col-md-6">
-
-<a href="http://www.viatutti.com" target="_blank"><img class="aligncenter wp-image-133 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/mobile-viatutti-e1466777301963.jpg" alt="vue mobile via tutti" width="128" height="240" /></a>
-<p style="text-align: center;">Vue Mobile</p>
-
-</div>
-</div>
-
-<hr />
-
-&nbsp;
-<h3>Nom : Trio Musique Brésilienne - Alagoas</h3>
-Url : <a href="http://www.trio-musique-bresilienne.fr" target="_blank">http://www.trio-musique-bresilienne.fr</a>
-
-Type : Site d'artiste - Groupe musique
-
-Trio Musique Brésilienne est un groupe de musique populaire brésilienne. Avec leurs instruments traditionnels, leurs prestations sont des invitations au voyage.
-
-Nous avons développé leur site internet avec le CMS Wordpress. Le groupe nous a demandé un référencement naturel ponctuel à la création du site. Le choix du CMS leur ouvre la possibilité d'ouvrir très facilement un blog d'actualités de leurs représentations. Ils bénéficient aussi d'un accès simplifié aux médias et aux textes pour modifications.
-
-&nbsp;
-<div class="row">
-<div class="col-md-6">
-
-<a href="http://www.trio-musique-bresilienne.fr" target="_blank"><img class="aligncenter wp-image-67 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/trio_alagoas.jpg" alt="Vue Desktop Trio musique brésilienne Alagoas" width="350" height="240" /></a>
-<p style="text-align: center;">Vue Desktop</p>
-
-</div>
-<div class="col-md-6">
-
-<a href="http://www.trio-musique-bresilienne.fr" target="_blank"><img class="aligncenter wp-image-134 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/mobile-trio_alagoas-e1466777458707.jpg" alt="vue mobile trio musique brésilienne Alagoas" width="129" height="240" /></a>
-<p style="text-align: center;">Vue Mobile</p>
-
-</div>
-</div>
-
-<hr />
-
-&nbsp;
-<h3>Nom : Le salon de coiffure Anamé</h3>
-Url : <a href="http://www.aname-coiffure.fr" target="_blank">http://www.aname-coiffure.fr</a>
-
-Type : Site vitrine commerçant
-
-Le salon de coiffure Anamé se situe à Evron en Mayenne. L'objectif du client est ici de communiquer sur ses horaires d'ouvertures, ses tarifs, ses services et sa localisation. De plus, ce site internet doit transmettre l'image et l'ambiance du salon.
-
-&nbsp;
-<div class="row">
-<div class="col-md-6">
-
-<a href="http://www.aname-coiffure.fr" target="_blank"><img class="aligncenter wp-image-65 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/aname.jpg" alt="vue desktop Aname coiffure" width="350" height="246" /></a>
-<p style="text-align: center;">Vue Desktop</p>
-
-</div>
-<div class="col-md-6">
-
-<a href="http://www.aname-coiffure.fr" target="_blank"><img class="aligncenter wp-image-136 size-full" src="http://www.artandteo.com/wp-content/uploads/2016/06/mobile-aname-e1466777819401.jpg" alt="Vue mobile Anamé" width="130" height="240" /></a>
-<p style="text-align: center;">Vue Mobile</p>
-
-</div>
-</div>
-
-<hr />
-<p style="text-align: right;"><a href="http://www.artandteo.com/contact/">... nous contacter &gt;</a></p>
-
-</div>
