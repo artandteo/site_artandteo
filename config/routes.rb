@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   root 'pages#accueil'
   scope "(/:locale)", locale: /en/ do
     get '/:locale' => 'pages#accueil'

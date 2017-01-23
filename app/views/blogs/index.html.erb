@@ -7,9 +7,9 @@
 <div class="content">
 
 <p id="notice"><%= notice %></p>
-
+<% if user_signed_in? && current_user.is_admin? %>
 <span class="btn btn-default"><%= link_to 'Ecrire un nouveau post', new_blog_path %></span>
-
+<% end %>
 <br />
 
 <div class="row col-centered">
@@ -19,7 +19,7 @@
           <img class="img-responsive" src="<%= blog.image %>" alt="<%= blog.image_legende %>">
           <div class="text_post col-centered">
             <h2><%= blog.titre %></h2>
-            <p class="d_post">Posté le <%= blog.created_at %></p>
+            <p class="d_post">Posté le <%= blog.created_at.strftime('%d/%m/%Y à %H:%M') %></p>
             <div class="contenu"><%= raw (sanitize remove_tags(blog.contenu), tags: %w(p)).truncate(250) %></div>
             <div class="sav_plus row col-centered">
               <div class="col-sm-4 col-centered">
@@ -27,12 +27,14 @@
                   <button class="btn btn-default" type="submit" value="<%= blog.titre %>">Lire plus</button>
                 </form>
               </div>
+              <% if user_signed_in? && current_user.is_admin? %>
               <div class="col-sm-4 col-centered">
                 <%= link_to 'Editer', edit_blog_path(blog), class: "btn btn-primary" %>
               </div>
               <div class="col-sm-4 col-centered">
                 <%= link_to 'Supprimer', blog, method: :delete, data: { confirm: 'Êtes-vous sûr?' }, class: "btn btn-danger" %>
               </div>
+              <% end %>
             </div>
           </div>
         </div>

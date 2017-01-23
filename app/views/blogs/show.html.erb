@@ -20,5 +20,7 @@
   <%= @blog.image_legende %>
 </p>
 
+<% if user_signed_in? && current_user.is_admin? %>
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
 <%= link_to 'Back', blogs_path %>
+<% end %>

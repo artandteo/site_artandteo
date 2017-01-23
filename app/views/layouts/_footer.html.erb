@@ -41,7 +41,11 @@
       <a href=""><%= t('social_wall') %></a>
     </div>
     <div class="col-md-3">
-      <a href=""><%= t('connexion') %></a>
+      <% if user_signed_in? %>
+      <a href="<%= destroy_user_session_path %>" alt="<% t('deconnexion') %>" data-method="delete"><%= t('deconnexion') %></a>
+      <% else %>
+      <a href="<%= new_user_session_path %>" alt="<% t('connexion') %>"><%= t('connexion') %></a>
+      <% end %>
     </div>
     <div class="col-md-3">
       <a href=""><%= t('tous_droits_reserves') %></a>

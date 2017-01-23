@@ -1,6 +1,7 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
-
+  before_action :is_admin!, only: [:edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:edit, :update, :destroy]
 
   # GET /blogs
   # GET /blogs.json
@@ -26,6 +27,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1/edit
   def edit
     @titre = t('blog.titre') 
+    !current_user.is_admin?
   end
 
   # POST /blogs
@@ -80,4 +82,11 @@ class BlogsController < ApplicationController
     def blog_params
       params.require(:blog).permit(:titre, :contenu, :image, :image_legende)
     end
+
+    def is_admin
+      if !user_signed_in? && !current_user.is_admin?
+        render 'blogs'
+      end
+    end
+
 end
