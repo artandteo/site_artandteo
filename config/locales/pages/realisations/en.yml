@@ -1,3 +1,62 @@
 en:
   realisations:
       titre: Our productions
+      sous_titre: Aujourd'hui un site web doit être visible aussi bien sur ordinateurs de bureau, téléphones mobiles et tablettes. Pour cette raison les sites internet d'ArtandTéo sont tous responsives.
+      leg_desk: Vue Desktop
+      leg_mob: Vue Mobile
+
+      nom_site_1: Destination Traduction
+      url_1: "http://www.destination-traduction.com"
+      type_1: "Type : Site PME multilingues Responsive"
+      content_1: Destination Traduction est un cabinet de traduction géré par Isabelle Garnier-Reubrecht qui réalise des documents en allemand, anglais, français dans les secteurs de la communication, de la technologie et du textile.
+                 Le CMS Drupal a été retenu pour réaliser ce site internet. Ce CMS est moins sujet aux attaques pirates mais est plus complexe à utiliser. Les droits et accès des utilisateurs sont gérés d'origine dans ce CMS ce qui le rend bien adapté aux PME.
+                 Chaque utilisateur peut avoir accès à une seule partie du site pour modifications.
+      contentb_1: Le contenu du site a été traduit par le client. ArtandTeo a intégré le contenu et réalisé le logo, icônes et infographies.
+                  Le référencement nous a été confié dans la durée avec pour objectif d'obtenir une visibilité en France, Allemagne et au Royaume Uni.
+      image_desk_1: "/img/dt_desk.jpg"
+      image_mob_1: "/img/dt_mob.jpg"
+      alt_desk_1: Vue bureau Destination Traduction
+      alt_mob_1: Vue sur mobile site Destination Traduction
+
+      nom_site_2: Rachel Launay-Painchaud Sculptures
+      url_2: "http://www.rachel-sculptures.com"
+      type_2: "Type : Site d'artiste"
+      content_2: Rachel Launay-Painchaud est une artiste autodidacte, elle découvre l’art du modelage il y a une vingtaine d’année.
+                 Son souhait est de tendre vers l’expressionnisme pour inspirer au spectateur une vive réaction émotionnelle.
+      contentb_2: Ce site a pour but de communiquer avec les internautes sur les réalisations et les événements autour de l'activité de Rachel.
+                  Ensemble, nous avons choisi, de développer son site avec le CMS Wordpress. Il est ainsi aisé d'ajouter des articles sur des événements futurs ou passés.
+                  Cet ajout régulier d'articles renforce la présence du site dans les moteurs de recherches.
+      image_desk_2: "/img/rachel_desk.jpg"
+      image_mob_2: "/img/rachel_mob.jpg"
+      alt_desk_2: Vue bureau Rachel Sculptures
+      alt_mob_2: Vue sur mobile site Rachel Sculptures
+
+      nom_site_3: Via Tutti
+      url_3: "http://www.viatutti.com"
+      type_3: "Type : Site PME"
+      content_3: Via Tutti est une société d'Assistance à Maîtrise d'Ouvrage. A chacun de ses clients, son dirigeant devait citer ses références et son expérience. Il nous a demandé de réaliser un site internet présentant son métier et son entreprise afin  que ses clients puissent le consulter librement après leur entretien. Il a ainsi obtenu un gain de temps dans chacun de ses rendez-vous.
+      contentb_3: Via Tutti ne nécessite actuellement pas d'une présence dans les moteurs de recherche. Nous avons réalisé ce site web sans CMS avec le framework de Bootstrap pour sa responsivité.
+      image_desk_3: "/img/viatutti_desk.jpg"
+      image_mob_3: "/img/viatutti_mob.jpg"
+      alt_desk_3: Vue bureau ViaTutti
+      alt_mob_3: Vue sur mobile site ViaTutti
+
+      nom_site_4: Trio Musique Brésilienne - Alagoas
+      url_4: "http://www.trio-musique-bresilienne.fr"
+      type_4: "Type : Site d'artiste - Groupe musique"
+      content_4: Trio Musique Brésilienne est un groupe de musique populaire brésilienne. Avec leurs instruments traditionnels, leurs prestations sont des invitations au voyage.
+      contentb_4: Nous avons développé leur site internet avec le CMS Wordpress. Le groupe nous a demandé un référencement naturel ponctuel à la création du site. Le choix du CMS leur ouvre la possibilité d'ouvrir très facilement un blog d'actualités de leurs représentations. Ils bénéficient aussi d'un accès simplifié aux médias et aux textes pour modifications.
+      image_desk_4: "/img/alagoas_desk.jpg"
+      image_mob_4: "/img/alagoas_mob.jpg"
+      alt_desk_4: Vue bureau Trio musique brésilienne Alagoas
+      alt_mob_4: Vue sur mobile Trio musique brésilienne Alagoas
+
+      nom_site_5: Le salon de coiffure Anamé
+      url_5: "http://www.aname-coiffure.fr"
+      type_5: "Type : Site vitrine commerçant"
+      content_5: Le salon de coiffure Anamé se situe à Evron en Mayenne. L'objectif du client est ici de communiquer sur ses horaires d'ouvertures, ses tarifs, ses services et sa localisation.
+      contentb_5: De plus, ce site internet doit transmettre l'image et l'ambiance du salon.
+      image_desk_5: "/img/aname_desk.jpg"
+      image_mob_5: "/img/aname_mob.jpg"
+      alt_desk_5: Vue bureau Anamé
+      alt_mob_5: Vue sur mobile site Anamé

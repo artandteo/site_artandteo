@@ -1,1 +1,33 @@
-<h1><%= t('contact.titre') %></h1>
+<div class="row bandeau_contact">
+  <div class="col-sm-12 text-center">
+    <h1><%= t('contact.titre') %></h1>
+  </div>
+</div>
+
+<div class="content">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <p><%= simple_format(t('contact.content')) %></p>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <%= form_for :reader do |f| %>
+    <div class="col-md-10 col-md-offset-2">
+        <%= f.text_field :name, class: "form-control", placeholder: "Votre nom" %><br />
+    </div>
+    <div class="col-md-10 col-md-offset-2">
+        <%= f.email_field :email, class: "form-control", placeholder: "Votre email" %><br />
+    </div>
+    <div class="col-md-10 col-md-offset-2">
+        <%= f.text_field :email, class: "form-control", placeholder: "Sujet" %><br />
+    </div>
+    <div class="col-md-10 col-md-offset-2">
+        <%= f.text_field :email, class: "form-control", placeholder: "Votre message" %><br />
+    </div>
+    <div class="col-md-1">
+        <%= f.submit "Envoyer", class: "form-control btn-default" %>
+    </div>
+    <% end %>
+  </div>
+</div>

@@ -1,26 +1,25 @@
+<div class="row bandeau_blog">
+  <div class="col-sm-12 text-center">
+    <h1><%= @blog.titre %></h1>
+  </div>
+</div>
+
+<div class="content">
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Titre:</strong>
-  <%= @blog.titre %>
-</p>
-
-<p>
-  <strong>Contenu:</strong>
-  <%= raw @blog.contenu %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @blog.image %>
-</p>
-
-<p>
-  <strong>Image legende:</strong>
-  <%= @blog.image_legende %>
-</p>
+<div class="text-justify">
+  <figure class="blog_image">
+    <img src="<%= @blog.image %>" alt="<%= @blog.image_legende %>">
+    <figcaption><%= @blog.image_legende %></figcaption>
+  </figure>
+  <p class="">
+    <%= raw @blog.contenu %>
+  </p>
+</div>
 
 <% if user_signed_in? && current_user.is_admin? %>
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
 <%= link_to 'Back', blogs_path %>
 <% end %>
+</div>
