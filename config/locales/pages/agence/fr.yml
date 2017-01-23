@@ -1,3 +1,27 @@
 fr:
   agence:
-    titre: Agence
+    titre: L'Agence
+    sous_titre: QUI SOMMES-NOUS ?
+    content: |
+        ArtandTéo est une jeune entreprise française née en Mayenne en 2015.
+
+        Elle est composée de :
+        <ul>
+         	<li>un développeur Front-End (HTML, CSS, jQuery...) , infographiste, webdesigner</li>
+         	<li>un développeur Back-End (PHP, Symphony, spécialiste Drupal...)</li>
+        </ul>
+        <p>et d'un réseau de spécialistes indépendants qui donnent un énorme potentiel à l'entreprise.</p>
+
+        Ces indépendants officient dans les secteurs suivants :
+        <ul>
+         	<li>Rédaction et Traduction</li>
+         	<li>Photo et vidéo</li>
+         	<li>Développement web</li>
+         	<li>Webdesign</li>
+         	<li>SEO : référencement naturel</li>
+         	<li>SEM : référencement payant</li>
+         	<li>SMO : visibilité par réseaux sociaux</li>
+         	<li>KPI : suivi de performance</li>
+        </ul>
+
+        C'est l'idée de l'association de nos expériences et compétences qui a fait naître ArtandTéo.

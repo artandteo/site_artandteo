@@ -35,4 +35,8 @@ class PagesController < ApplicationController
 	def contact
 		@titre = t('contact.titre')
 	end
+
+	def mentions_legales
+		@titre = t('mlegales.titre')
+	end
 end

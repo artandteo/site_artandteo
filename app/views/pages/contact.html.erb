@@ -13,21 +13,22 @@
   <br />
   <div class="row">
     <%= form_for :reader do |f| %>
-    <div class="col-md-10 col-md-offset-2">
-        <%= f.text_field :name, class: "form-control", placeholder: "Votre nom" %><br />
-    </div>
-    <div class="col-md-10 col-md-offset-2">
-        <%= f.email_field :email, class: "form-control", placeholder: "Votre email" %><br />
-    </div>
-    <div class="col-md-10 col-md-offset-2">
-        <%= f.text_field :email, class: "form-control", placeholder: "Sujet" %><br />
-    </div>
-    <div class="col-md-10 col-md-offset-2">
-        <%= f.text_field :email, class: "form-control", placeholder: "Votre message" %><br />
-    </div>
-    <div class="col-md-1">
-        <%= f.submit "Envoyer", class: "form-control btn-default" %>
-    </div>
+      <div class="col-md-8 col-md-offset-2">
+          Votre nom: <%= f.text_field :name, class: "form-control" %><br />
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+          Votre email: <%= f.email_field :email, class: "form-control" %><br />
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+          Objet: <%= f.text_field :objet, class: "form-control" %><br />
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+          Votre message: <%= f.text_field :message, class: "form-control" %><br />
+      </div>
+      <br />
+      <div class="col-md-2 col-md-offset-5">
+          <%= f.submit :Envoyer, class: "form-control btn-default" %>
+      </div>
     <% end %>
   </div>
 </div>
