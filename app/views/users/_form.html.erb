@@ -1,0 +1,39 @@
+<%= form_for user do |f| %>
+
+  <div class="field">
+    <%= f.label :firstname, t('admin.lb_prenom') %><br />
+    <%= f.text_field :firstname, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lastname, t('admin.lb_nom') %><br />
+    <%= f.text_field :lastname, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email, t('admin.lb_email') %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :is_admin, t('admin.lb_admin') %><br />
+    <%= f.check_box :is_admin, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password, t('admin.lb_mdp') %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation, t('admin.lb_mdp_confirm') %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit t('admin.btn-valid') %>
+  </div>
+<% end %>

@@ -1,0 +1,5 @@
+en:
+    admin:
+        titre: "Administration"
+        nouvel_utilisateur: "Add new user"
+        voir_utilisateurs: "All users"

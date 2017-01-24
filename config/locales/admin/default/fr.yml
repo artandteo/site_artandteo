@@ -1,0 +1,10 @@
+fr:
+  admin: 
+    titre: "Administration"
+    lb_prenom: "Prénom"
+    lb_nom: "Nom"
+    lb_email: "Adresse email"
+    lb_admin: "Droit d'administrateur ?"
+    lb_mdp: "Mot de passe"
+    lb_mdp_confirm: "Confirmer le mot de passe"
+    btn-valid: "Valider"

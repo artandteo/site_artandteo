@@ -1,0 +1,6 @@
+fr:
+    admin:
+        titre: "Administration"
+        nouvel_utilisateur: "Ajouter un nouvel utilisateur"
+        voir_utilisateurs: "Tous les utilisateurs"
+

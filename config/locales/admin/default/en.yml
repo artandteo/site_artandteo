@@ -1,0 +1,10 @@
+en:
+  admin:
+    titre: "Management"
+    lb_prenom: "Firstname"
+    lb_nom: "Lastname"
+    lb_email: "Email address"
+    lb_admin: "Administrator ?"
+    lb_mdp: "Password"
+    lb_mdp_confirm: "Password confirmation"
+    btn-valid: "Valid"

@@ -1,0 +1,10 @@
+fr:
+    admin:
+        titre_utilisateurs: "Tous les utilisateurs"
+        noms: "Nom complet"
+        email: "Adresse email"
+        admin: "Administrateur ?"
+        actions: "Actions"
+        nouvel_utilisateur: "Créer un nouvel utilisateur"
+        
+        titre_editer: "Editer un utilisateur"
