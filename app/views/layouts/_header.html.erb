@@ -2,10 +2,10 @@
   <div class="top-bar">
     <div class="social-lang">
       <span class="socials-icon">
-        <a href="http://facebook.com" alt="Facebook"><img src="/img/icons/fb.png" alt="Facebook"></a>
-        <a href="#" alt="Linkedin"><img src="/img/icons/lk.png" alt="Linkedin"></a>
-        <a href="#" alt="Twitter"><img src="/img/icons/tw.png" alt="Twitter"></a>
-        <a href="#" alt="Google+"><img src="/img/icons/gp.png" alt="Google+"></a>
+        <a href="https://www.facebook.com/artandteo/?fref=ts" target="_blank" alt="Facebook ArtandTeo"><img src="/img/icons/fb.png" alt="Facebook ArtandTeo"></a>
+        <a href="https://www.linkedin.com/in/frédéric-reubrecht-2aba76107?trk=nav_responsive_tab_profile" target="_blank" alt="Linkedin ArtandTeo"><img src="/img/icons/lk.png" alt="Linkedin ArtandTeo"></a>
+        <a href="https://twitter.com/artandteo" target="_blank" alt="Twitter"><img src="/img/icons/tw.png" alt="Twitter"></a>
+        <a href="https://plus.google.com/u/0/103348544084626253437" target="_blank" alt="Google+ ArtandTeo"><img src="/img/icons/gp.png" alt="Google+ ArtandTeo"></a>
       </span>
       <span class="languages">
         <a href="/" alt="Définir la langue du site en français"><img class="lg-sel" src="/img/icons/flag_france.png" title="Français"/></a>
@@ -14,8 +14,8 @@
     </div>
 
     <div class="contacts">
-      <span class="icontb"><%= icon('envelope') %></span><span class="txttb">contact<%= icon('at') %>artandteo.com</span>
-      <span class="icontb"><%= icon('mobile') %></span><span class="txttb"> 02 43 69 24 27</span>
+      <a href="mailto:contact@artandteo.com"><div class="icontb"><%= icon('envelope') %></div><div class="txttb">contact<%= icon('at') %>artandteo.com</div></a>
+      <a href="tel:+33243692427"><div class="icontb"><%= icon('mobile') %></div><div class="txttb">02 43 69 24 27</div></a>
     </div>
   </div>
 
@@ -23,6 +23,9 @@
    <div class="container-fluid">
      <!-- Brand and toggle get grouped for better mobile display -->
      <div class="navbar-header">
+       <a class="logo_collapsed" href="<%= root_path %>">
+         <img alt="Logo ArtandTeo" src="/img/logfb-ArtandTeo.png">
+       </a>
        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
          <span class="sr-only">Toggle navigation</span>
          <span class="icon-bar"></span>
@@ -33,39 +36,43 @@
 
      <!-- Collect the nav links, forms, and other content for toggling -->
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-       <div class="row">
-       <div class="col-sm-5 text-center">
-         <ul class="nav navbar-nav navbar-right">
-           <li><a href="<%= root_path %>"><%= t('liens.accueil') %> <span class="sr-only">(current)</span></a></li>
-           <li><a class="separator"></a></li>
-           <li><a href="<%= agence_path %>"><%= t('liens.agence') %></a></li>
-           <li><a class="separator"></a></li>
-           <li class="dropdown">
-             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-             <ul class="dropdown-menu">
-               <li><a href="<%= strategie_digitale_path %>"><%= t('liens.strategie_digitale') %></a></li>
-               <li><a href="<%= web_developpement_path %>"><%= t('liens.web_developpement') %></a></li>
-               <li><a href="<%= community_management_path %>"><%= t('liens.community_manager') %></a></li>
-               <li><a href="<%= referencement_path %>"><%= t('liens.referencement') %></a></li>
-             </ul>
-           </li>
-         </ul>
+       <div id="menu" class="row">
+
+         <div id="left-menu" class="col-sm-5 text-center">
+           <ul class="nav navbar-nav navbar-right">
+             <li><a href="<%= root_path %>"><%= t('liens.accueil') %> <span class="sr-only">(current)</span></a></li>
+             <li><a class="separator"></a></li>
+             <li><a href="<%= agence_path %>"><%= t('liens.agence') %></a></li>
+             <li><a class="separator"></a></li>
+             <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                 <li><a href="<%= strategie_digitale_path %>"><%= t('liens.strategie_digitale') %></a></li>
+                 <li><a href="<%= web_developpement_path %>"><%= t('liens.web_developpement') %></a></li>
+                 <li><a href="<%= community_management_path %>"><%= t('liens.community_manager') %></a></li>
+                 <li><a href="<%= referencement_path %>"><%= t('liens.referencement') %></a></li>
+               </ul>
+             </li>
+           </ul>
+         </div>
+
+         <div id="logo_at" class="col-sm-2 text-center">
+           <a class="" href="<%= root_path %>">
+             <img alt="Logo ArtandTeo" src="/img/logfb-ArtandTeo.png">
+           </a>
+         </div>
+
+         <div id= "right-menu" class="col-sm-5 text-center">
+           <ul class="nav navbar-nav">
+             <li><a href="<%= portfolio_path %>"><%= t('liens.realisations') %></a></li>
+             <li><a class="separator"></a></li>
+             <li><a href="<%= blogs_path %>"><%= t('blog.titre') %></a></li>
+             <li><a class="separator"></a></li>
+             <li><a href="<%= contact_path %>"><%= t('liens.contact') %></a></li>
+           </ul>
+         </div>
+
        </div>
-       <div id="logo_at" class="col-sm-2">
-         <a class="" href="<%= root_path %>">
-           <img alt="Logo ArtandTeo" src="/img/logfb-ArtandTeo.png">
-         </a>
-       </div>
-       <div class= "col-sm-5 text-center navbar-left">
-         <ul class="nav navbar-nav">
-           <li><a href="<%= portfolio_path %>"><%= t('liens.realisations') %></a></li>
-           <li><a class="separator"></a></li>
-           <li><a href="<%= blogs_path %>"><%= t('blog.titre') %></a></li>
-           <li><a class="separator"></a></li>
-           <li><a href="<%= contact_path %>"><%= t('liens.contact') %></a></li>
-         </ul>
-       </div>
-     </div>
      </div><!-- /.navbar-collapse -->
    </div><!-- /.container-fluid -->
   </nav>

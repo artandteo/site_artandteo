@@ -28,7 +28,7 @@ class PagesController < ApplicationController
 		@titre = t('referencement.titre')
 	end
 
-	def realisations
+	def portfolio
 		@titre = t('realisations.titre')
 	end
 
