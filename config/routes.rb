@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users
+
   root 'pages#accueil'
   scope "(/:locale)", locale: /en/ do
     get '/:locale' => 'pages#accueil'
@@ -19,12 +20,16 @@ Rails.application.routes.draw do
     # optionel
     get '/social-wall', to: 'pages#social_wall', as: :social_wall
 
-    # admin pagelocale temporaire en attendant tout le système
-    get '/admin', to: 'admins#accueil', as: :admin
-
     resources :blogs
 
+    # ADMINISTRATION #
+    get '/admin', to: 'admins#accueil', as: :admin
+
+    scope :admin do 
+      resources :users
+    end
   end
+
 
   # ckeditor
 
