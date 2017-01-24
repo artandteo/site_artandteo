@@ -7,11 +7,15 @@
     <h2><%= t('accueil.slogan') %></h2>
   </div>
   <div class="row">
-    <div class="col-md-3 col-md-offset-2 text-center">
-      <button type="button" class="btn btn-default"><%= t('accueil.nous_trouver') %></button>
+    <div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2 text-center">
+      <form action="<%= agence_path %>">
+        <button type="submit" class="btn btn-default"><%= t('accueil.nous_trouver') %></button>
+      </form>
     </div>
-    <div class="col-md-3 col-md-offset-2 text-center">
-      <button type="button" class="btn btn-info"><%= t('accueil.nous_contacter') %></button>
+    <div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-1 text-center">
+      <form action="<%= contact_path %>">
+        <button type="submit" class="btn btn-info"><%= t('accueil.nous_contacter') %></button>
+      </form>
     </div>
   </div>
 </section>
@@ -55,7 +59,9 @@
         <h4><%= t('accueil.titre_visib') %></h4>
         <p><%= t('accueil.txt_visib') %></p>
         <div class="sav_plus">
-          <button type="button" class="btn btn-default"><%= t('savoir_plus') %></button>
+          <form action="<%= strategie_digitale_path %>">
+            <button type="submit" class="btn btn-default"><%= t('savoir_plus') %></button>
+          </form>
         </div>
       </div>
       <div class="card_besoin">
@@ -64,7 +70,9 @@
         <hr>
         <p><%= t('accueil.txt_besoin2') %></p>
         <div class="sav_plus">
-          <button type="button" class="btn btn-default"><%= t('savoir_plus') %></button>
+          <form action="<%= web_developpement_path %>">
+            <button type="submit" class="btn btn-default"><%= t('savoir_plus') %></button>
+          </form>
         </div>
       </div>
     </div>

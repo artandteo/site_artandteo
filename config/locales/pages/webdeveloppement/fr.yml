@@ -1,30 +1,31 @@
 fr:
   web_developpement:
     titre: Web Developpement
-    content: |
-        <h4>La technologie au service de votre identité</h4>
-        Les bases de votre projet sont définies par un cahier des charges, développer votre site internet consiste maintenant à :
+    content1: |
+        <h3>La technologie au service de votre identité</h3>
+        <p>Les bases de votre projet sont définies par un cahier des charges, développer votre site internet consiste maintenant à :</p>
         <ul>
          	<li>Mettre en place une chartre graphique à l'image de votre identité.</li>
          	<li>Choisir une technologie adaptée à votre projet.</li>
         </ul>
+    content2: |
+        <h3>Des sites internet responsives</h3>
+        <p>Aujourd’hui, 80% des navigations sur le net se font sur appareils mobiles. Votre présence sur le net doit être « responsive », adaptée à toutes les surfaces numériques.</p>
 
-        <h4>Des sites internet responsives</h4>
-        Aujourd’hui, 80% des navigations sur le net se font sur appareils mobiles. Votre présence sur le net doit être « responsive », adaptée à toutes les surfaces numériques.
+        <p>Le principe de conception en « mobile first » ainsi que les Frameworks tels que Bootstrap® et Fondation® répondent à ces nouvelles exigences de l’évolution du monde numérique.</p>
 
-        Le principe de conception en « mobile first » ainsi que les Frameworks tels que Bootstrap® et Fondation® répondent à ces nouvelles exigences de l’évolution du monde numérique.
+        <p>La plupart des CMS (Système de Gestion de Contenu) actuels (Wordpress®, Drupal®, Prestashop®...) sont également responsives et s'adaptent très bien aux téléphones mobiles. La transformation des menus classiques que l'on trouve sur un ordinateur de bureau se transforme automatiquement en "Menu Burger", ce symbol est devenu tellement courant qu'on le trouve maintenant aussi sur des sites internet en version desktop. Le menu se rétracte alors à volonté et libère l'espace pour plus de contenu.</p>
+    content3: |
+        <h3>Des contenus de professionnels</h3>
+        <p>Un site professionnel se démarque par la qualité de ses contenus.</p>
 
-        La plupart des CMS (Système de Gestion de Contenu) actuels (Wordpress®, Drupal®, Prestashop®...) sont également responsives et s'adaptent très bien aux téléphones mobiles. La transformation des menus classiques que l'on trouve sur un ordinateur de bureau se transforme automatiquement en "Menu Burger", ce symbol est devenu tellement courant qu'on le trouve maintenant aussi sur des sites internet en version desktop. Le menu se rétracte alors à volonté et libère l'espace pour plus de contenu.
-        <h4>Des contenus de professionnels</h4>
-        Un site professionnel se démarque par la qualité de ses contenus.
+        <p>ArtandTéo se propose de prendre en charge la réalisation de vos différents médias tels que infographies, photos, vidéos, audio ou tout autres contenus.</p>
 
-        ArtandTéo se propose de prendre en charge la réalisation de vos différents médias tels que infographies, photos, vidéos, audio ou tout autres contenus.
+        <p>Le cas échéant, nous n'hésitons pas à faire appel à professionnels de la photographie, ainsi qu'à des traducteurs professionnels pour que votre contenu soit valorisé à sa juste valeur.</p>
+    content4: |
+        <h3>L'autonomie dans le gestion de contenu</h3>
+        <p>Si vous souhaitez gérer vous même le contenu de votre site, nous maitrisons les CMS (Système de Gestion de Contenu) tels que Drupal®, Wordpress® ou Prestashop® (e-commerce).</p>
 
-        Le cas échéant, nous n'hésitons pas à faire appel à professionnels de la photographie, ainsi qu'à des traducteurs professionnels pour que votre contenu soit valorisé à sa juste valeur.
-        <h4>L'autonomie dans le gestion de contenu</h4>
-        Si vous souhaitez gérer vous même le contenu de votre site, nous maitrisons les CMS (Système de Gestion de Contenu) tels que Drupal®, Wordpress® ou Prestashop® (e-commerce).
-
-        Nous pouvons vous préparer à cette étape en vous proposant des formations sur votre poste de travail ou en vous fournissant une documentation adaptée à la gestion de votre site.
-
-        &nbsp;
+        <p>Nous pouvons vous préparer à cette étape en vous proposant des formations sur votre poste de travail ou en vous fournissant une documentation adaptée à la gestion de votre site.</p>
+    content5: |
         <blockquote>Dans la communication, le plus compliqué n'est ni le message, ni la technique, mais le récepteur.</blockquote>
