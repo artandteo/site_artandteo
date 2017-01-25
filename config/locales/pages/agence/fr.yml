@@ -1,27 +1,32 @@
 fr:
   agence:
     titre: L'Agence
-    sous_titre: QUI SOMMES-NOUS ?
-    content: |
-        ArtandTéo est une jeune entreprise française née en Mayenne en 2015.
-
-        Elle est composée de :
-        <ul>
-         	<li>un développeur Front-End (HTML, CSS, jQuery...) , infographiste, webdesigner</li>
-         	<li>un développeur Back-End (PHP, Symphony, spécialiste Drupal...)</li>
-        </ul>
-        <p>et d'un réseau de spécialistes indépendants qui donnent un énorme potentiel à l'entreprise.</p>
-
-        Ces indépendants officient dans les secteurs suivants :
-        <ul>
-         	<li>Rédaction et Traduction</li>
-         	<li>Photo et vidéo</li>
-         	<li>Développement web</li>
-         	<li>Webdesign</li>
-         	<li>SEO : référencement naturel</li>
-         	<li>SEM : référencement payant</li>
-         	<li>SMO : visibilité par réseaux sociaux</li>
-         	<li>KPI : suivi de performance</li>
-        </ul>
-
-        C'est l'idée de l'association de nos expériences et compétences qui a fait naître ArtandTéo.
+    sous_titre: |
+        <h3>Les fondateurs</h3>
+    content1: |
+        <p>ArtandTéo est une jeune entreprise française née en Mayenne en 2015.</p>
+        <p>Passionés par l'univers digital, espace de création, où se joue les nouvelles stratégies de communication, Fred et Jean-Pierre mettent leurs expériences créatives au service de vos projets.</p>
+    content2: |
+        Fred et Jean-Pierre, les fondateurs, entourés d'une équipe au service de vos projets.
+    fred: |
+        Dessinateur de formation.
+        Développeur Front-End, design, <a>SMO<span>visibilité par réseaux sociaux</span></a>, <a>KPI<span>suivi de performance</span></a>
+    j_p: |
+        Musicien de formation.
+        Développeur Back-End, rédaction, médias (audio/vidéo), <a>SEO<span>référencement naturel</span></a>, <a>SEM<span>référencement payant</span></a>
+    sous_titre_2: |
+        <h3>Equipage</h3>
+    partner1: |
+        <h4>Isabelle</h4>
+        <p>Rédaction et traduction allemand, anglais, français.</p>
+    partner2: |
+        <h4>Alexandre</h4>
+        <p>Rédaction, posts et recettage.</p>
+    partner3: |
+        <h4>Arthur</h4>
+        <p>Graphiste, création logos et infographies.</p>
+    partner4: |
+        <h4>Kévin</h4>
+        <p>Développeur Back-End, php, ruby; symfony, rails...</p>
+    localisation: |
+        <h3>Nous Trouver</h3>
