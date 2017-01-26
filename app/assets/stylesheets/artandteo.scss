@@ -38,6 +38,26 @@ div.content {
   margin: 0 70px 0 70px;
 }
 
+.legended {
+  a {
+    text-decoration: none;
+  }
+  span {
+    display: none;
+  }
+  a:hover span {
+      display: inline;
+      position: absolute;
+      margin-top:25px;
+      left: 100px;
+      width: 200px;
+      border:1px solid #009900;
+      background:#ffffff;
+      text-align: center;
+      color: #ff0000;
+    }
+}
+
 @mixin bandeau {
   opacity: 0.9;
   height: 200px;
@@ -232,6 +252,10 @@ li.active > a::after {
   margin: 0;
 }
 
+#logo_at:hover{
+  opacity: 0.8;
+}
+
 .logo_collapsed {
   display: none;
 }
@@ -389,6 +413,11 @@ li.active > a::after {
   margin-bottom: 20px;
 }
 
+#map {
+        height: 400px;
+        width: 100%;
+       }
+
 .map_google {
   background: url(/img/map_google.jpg) no-repeat center center;
   opacity: 0.9;
@@ -413,6 +442,39 @@ li.active > a::after {
   img {
     margin: 0 10px 0 10px;
   }
+}
+
+// -------------- Page Agence -----------------
+
+.partners {
+  border: 20px solid $gris_pale;
+  margin: 20px;
+  min-height: 180px;
+}
+
+.adresse {
+  margin: 0;
+  padding: 20px;
+  background-color: $taupe;
+  color: $blanc;
+  height: 400px;
+  p, a {
+    color: $blanc;
+  }
+}
+
+.agencemap > div {
+  border: 1px solid $taupe;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.fondateur {
+  background-color: $gris_pale;
+  margin: 10px;
+  padding: 20px;
+  min-height: 280px;
 }
 
 // -------------- Page Blog -----------------
@@ -579,6 +641,12 @@ figure.blog_image {
   h3:after {
     margin-right:-10%;
     margin-left:1em;}
+
+  .adresse {
+    padding-left: 10px;
+    border: none;
+    height: auto;
+  }
 }
 
 /* Small devices (tablets, 768px and up) */

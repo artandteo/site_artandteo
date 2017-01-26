@@ -114,7 +114,12 @@
       <h3><%= t('accueil.titre_nous_trouver') %></h3>
     </div>
   </div>
-  <div class="map_google"></div>
+  <!-- <div class="map_google"></div> -->
+  <div class="content">
+      <%= render 'pages/map' %>
+  </div>
+  <br />
+  <br />
 </section>
 
 <section class="passion">
@@ -134,7 +139,7 @@
       </div>
       <div class="col-md-6 text-center">
         <div class="contact_card">
-          <img class="img-circle" src="/img/jp.jpg" alt="Photo de Fred">
+          <img class="img-circle" src="/img/jp.jpg" alt="Photo de Jean-Pierre">
           <hr>
           <h4><%= t('accueil.titre_jp') %></h4>
           <p><%= t('accueil.text_jp') %></p>

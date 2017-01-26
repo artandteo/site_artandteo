@@ -1,0 +1,42 @@
+<div id="map"></div>
+    <script>
+      function initMap() {
+        var artandteo = {lat: 48.132907, lng: -0.430239};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: artandteo
+        });
+        //--> Configuration de l'icône personnalisée
+        var image = {
+            // Adresse de l'icône personnalisée
+            url: 'img/gmark-AT.png',
+            // Taille de l'icône personnalisée
+            size: new google.maps.Size(30, 50),
+            // Origine de l'image, souvent (0, 0)
+            origin: new google.maps.Point(0,0),
+            // L'ancre de l'image. Correspond au point de l'image que l'on raccroche à la carte. Par exemple, si votre îcone est un drapeau, cela correspond à son mâts
+            anchor: new google.maps.Point(0, 40)
+        };
+        //--> Configuration de l'ombre personnalisée
+        var shadow = {
+            // Adresse de l'ombre personnalisée
+            url: 'images/drapeau_ombre.png',
+            // Taille de l'ombre personnalisée
+            size: new google.maps.Size(32, 40),
+            // Origine de l'image, souvent (0, 0)
+            origin: new google.maps.Point(0,0),
+            // L'ancre de l'image. Correspond au point de l'image que l'on raccroche à la carte. Par exemple, si votre îcone est un drapeau, cela correspond à son mâts
+            anchor: new google.maps.Point(0, 40)
+        };
+        var marker = new google.maps.Marker({
+          position: artandteo,
+          map: map,
+          title: "ArtandTeo",
+          shadow: shadow,
+          icon: image
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMXD2YYEMaEG_NQzkhOz3x8xkyxicY5Sw&callback=initMap">
+    </script>

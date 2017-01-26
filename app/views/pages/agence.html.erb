@@ -5,11 +5,92 @@
 </div>
 
 <div class="content">
-  <div class="row text-left">
-    <div class="col-sm-12 col-md-8 col-md-offset-2 text-left">
-      <h4><%= t('agence.sous_titre') %></h4>
-      <br />
-      <p><%= simple_format(t('agence.content')) %></p>
+  <div class="row text-center">
+    <div class="col-sm-12 col-md-8 col-md-offset-2">
+      <%= simple_format(t('agence.sous_titre')) %>
     </div>
   </div>
+
+  <div class="row text-center">
+    <div class="col-sm-12 col-md-8 col-md-offset-2">
+      <%= simple_format(t('agence.content1')) %>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="row text-center">
+    <div class="col-sm-6 col-md-4 col-md-offset-2 legended">
+      <div class="fondateur">
+        <img class="img-circle" src="/img/fred.jpg" alt="Photo de Fred">
+        <p><%= simple_format(t('agence.fred')) %></p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 legended">
+      <div class="fondateur">
+        <img class="img-circle" src="/img/jp.jpg" alt="Photo de Jean-Pierre">
+        <p><%= simple_format(t('agence.j_p')) %></p>
+      </div>
+    </div>
+  </div>
+
+  <br /><br />
+
+  <div class="row text-center">
+    <div class="col-sm-12 col-md-8 col-md-offset-2">
+      <%= simple_format(t('agence.sous_titre_2')) %>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-sm-12 col-md-8 col-md-offset-2">
+      <p><%= t('agence.content2') %></p>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-sm-6 col-md-4 col-md-offset-2">
+      <div class="partners">
+        <%= simple_format(t('agence.partner1')) %>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="partners">
+        <%= simple_format(t('agence.partner2')) %>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-md-offset-2">
+      <div class="partners">
+        <%= simple_format(t('agence.partner3')) %>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="partners">
+        <%= simple_format(t('agence.partner4')) %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <%= simple_format(t('agence.localisation')) %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-9 agencemap">
+      <%= render 'pages/map' %>
+    </div>
+    <div class="col-md-3">
+      <div class="adresse">
+        <h4>ArtandTeo</h4>
+        <p>3 rue de Beauregard</p>
+        <p>53600 Châtres-la-Forêt</p>
+        <p>tel: 02 43 69 24 27</p>
+        <p>email: <a href="mailto:contact@artandteo.com">contact<%= icon('at') %>artandteo.com</a></p>
+      </div>
+    </div>
+  </div>
+  <br /><br />
+
 </div>
