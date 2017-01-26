@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170123134752) do
+ActiveRecord::Schema.define(version: 20170125155253) do
 
   create_table "blog_posts", force: :cascade do |t|
     t.string   "title"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20170123134752) do
     t.string   "image_legende"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.integer  "users_id"
+    t.index ["users_id"], name: "index_blogs_on_users_id"
   end
 
   create_table "ckeditor_assets", force: :cascade do |t|

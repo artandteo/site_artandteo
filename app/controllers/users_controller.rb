@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   	before_action :authenticate_user!, only: [:index, :new, :create, :edit, :update, :destroy]
   	before_action :is_admin
 
-
 	def index
 		@titre = t('admin.titre_utilisateurs')
 		@users = User.all
@@ -20,17 +19,27 @@ class UsersController < ApplicationController
 
 	def create
 		@user = User.new(set_params)
-		@user.save
+		if @user.valid?
+			@user.save
+			redirect_to users_path, flash: { success: "L'utilisateur a bien été créer !" }
+		else 
+			render 'new'
+		end
 		
-		redirect_to users_path, notice: "L'utilisateur a bien été crée"
+		
 	end
 
 	
 
 	def update 
 		@user = User.find(params[:id])
-		@user.update(set_params)
-		redirect_to users_path, notice: "L'utilisateur a bien été modifié"
+		if @user.valid?
+			@user.update(set_params)
+			redirect_to users_path
+		else 
+			render 'edit'
+		end
+		
 	end
 
 	def destroy 

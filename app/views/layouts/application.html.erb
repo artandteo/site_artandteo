@@ -33,12 +33,10 @@
   <body>
     <%= render 'layouts/header' %>
 
-    <% if !notice.blank? || !alert.blank? %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
+    <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
     <% end %>
-
+    
     <div class"container">
       <%= yield %>
     </div>
