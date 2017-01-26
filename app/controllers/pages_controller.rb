@@ -34,6 +34,7 @@ class PagesController < ApplicationController
 
 	def contact
 		@titre = t('contact.titre')
+		ContactMailer.contact().deliver_now
 	end
 
 	def mentions_legales
