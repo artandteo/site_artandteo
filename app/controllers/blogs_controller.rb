@@ -3,12 +3,14 @@ class BlogsController < ApplicationController
   before_action :is_admin, only: [:edit, :update, :destroy]
   before_action :authenticate_user!, only: [:edit, :update, :destroy]
 
+
+
+
   # GET /blogs
   # GET /blogs.json
   def index
     @titre = t('blog.titre') 
-    @blogs = Blog.all
-
+    @blogs = Blog.includes(:categorie).includes(:user).all
     
   end
 
@@ -22,6 +24,7 @@ class BlogsController < ApplicationController
   def new
     @titre = t('blog.titre') 
     @blog = Blog.new
+    
   end
 
   # GET /blogs/1/edit
@@ -32,9 +35,10 @@ class BlogsController < ApplicationController
   # POST /blogs
   # POST /blogs.json
   def create
-    @titre = t('blog.titre') 
+    @titre = t('blog.titre')
     @blog = Blog.new(blog_params)
-
+    @blog.id = Blog.last.id + 1
+    @blog.users_id = current_user.id
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
@@ -79,7 +83,7 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:titre, :contenu, :image, :image_legende)
+      params.require(:blog).permit(:titre, :contenu, :categorie_id, :image, :image_legende, :user)
     end
 
     def is_admin

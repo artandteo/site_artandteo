@@ -18,8 +18,8 @@
         <div class="post col-centered">
           <img class="img-responsive" src="<%= blog.image %>" alt="<%= blog.image_legende %>">
           <div class="text_post col-centered">
-            <h4><%= blog.titre.byteslice(0,20) %> ...</h4>
-            <p class="d_post">Posté le <%= blog.created_at.strftime('%d/%m/%Y à %H:%M') %></p>
+            <h4><%= blog.titre.byteslice(0,20) %>...</h4>
+            <p class="d_post">Posté le <%= blog.created_at.strftime('%d/%m/%Y à %H:%M') %> par <% if blog.user %><%= blog.user.firstname %> <%= blog.user.lastname %><% end %></p>
             <div class="contenu"><%= raw (sanitize remove_tags(blog.contenu), tags: %w(p)).truncate(250) %></div>
             <div class="sav_plus row col-centered">
               <div class="col-sm-4 col-centered">

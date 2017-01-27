@@ -27,6 +27,11 @@
 
 </div>
 
+<p>
+<% if @blog.categorie %>
+<%= @blog.categorie.categorie_nom %>
+<% end %>
+</p>
 
 <div class="row text-justify">
   <div class="col-sm-12">

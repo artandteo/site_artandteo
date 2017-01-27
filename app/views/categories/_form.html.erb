@@ -1,0 +1,11 @@
+<%= form_for(categorie) do |f| %>
+	<div class="field">
+	    <%= f.label :categorie_nom, t('categorie.nom') %>
+	    <%= f.text_field :categorie_nom %>
+  	</div>
+
+  	<div class="actions">
+    	<%= f.submit :Valider %>
+  	</div>
+
+<% end %>
