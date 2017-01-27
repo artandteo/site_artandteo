@@ -13,6 +13,11 @@
     <img src="<%= @blog.image %>" alt="<%= @blog.image_legende %>">
     <figcaption><%= @blog.image_legende %></figcaption>
   </figure>
+  <p>
+  <% if @blog.categorie %>
+  <%= @blog.categorie.categorie_nom %>
+  <% end %>
+  </p>
   <p class="">
     <%= raw @blog.contenu %>
   </p>

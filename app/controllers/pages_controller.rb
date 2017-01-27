@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 	def accueil
 		@titre = t('accueil.titre')
-		@last_post = Blog.all.order('created_at DESC').limit(2)
+		@last_post = Blog.includes(:user).all.order('created_at DESC').limit(2)
 	end
 
 	def agence

@@ -22,8 +22,13 @@
   </div>
 
   <div class="field">
+    <%= f.label :categorie %>
+    <%= f.select :categorie_id, Categorie.pluck(:categorie_nom, :id) %>
+  </div>
+
+  <div class="field">
     <%= f.label :image %>
-    <%= f.text_field :image %>
+    <%= f.file_field :image %>
   </div>
 
   <div class="field">

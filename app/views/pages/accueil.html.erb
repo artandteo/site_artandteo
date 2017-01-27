@@ -92,7 +92,7 @@
           <img class="img-responsive" src="<%= post.image %>" alt="<%= post.image_legende %>" />
           <div class="text_post">
             <h2><%= post.titre.byteslice(0,20) %>...</h2>
-            <p class="d_post">Posté le <%= post.created_at.strftime('%d/%m/%Y à %H:%M') %></p>
+            <p class="d_post">Posté le <%= post.created_at.strftime('%d/%m/%Y à %H:%M') %> par <% if post.user %> <%= post.user.firstname %> <%= post.user.lastname %><% end %> </p>
             <div class="contenu">
             <%= raw (sanitize remove_tags(post.contenu), tags: %w(p)).truncate(250) %>
             </div>
