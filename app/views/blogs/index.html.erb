@@ -14,11 +14,11 @@
 
 <div class="row col-centered">
   <% @blogs.each do |blog|%>
-      <div class="col-sm-4 spacing">
+      <div class="col-sm-6 col-md-4 spacing">
         <div class="post col-centered">
           <img class="img-responsive" src="<%= blog.image %>" alt="<%= blog.image_legende %>">
           <div class="text_post col-centered">
-            <h2><%= blog.titre.byteslice(0,20) %>...</h2>
+            <h4><%= blog.titre.byteslice(0,20) %> ...</h4>
             <p class="d_post">Posté le <%= blog.created_at.strftime('%d/%m/%Y à %H:%M') %></p>
             <div class="contenu"><%= raw (sanitize remove_tags(blog.contenu), tags: %w(p)).truncate(250) %></div>
             <div class="sav_plus row col-centered">
@@ -29,10 +29,12 @@
               </div>
               <% if user_signed_in? && current_user.is_admin? %>
               <div class="col-sm-4 col-centered">
-                <%= link_to 'Editer', edit_blog_path(blog), class: "btn btn-primary" %>
+                <form action="<%= edit_blog_path(blog) %>">
+                  <button class="btn btn-info" type="submit" value="<%= blog.titre %>">Editer</button>
+                </form>
               </div>
               <div class="col-sm-4 col-centered">
-                <%= link_to 'Suppr', blog, method: :delete, data: { confirm: 'Êtes-vous sûr?' }, class: "btn btn-danger" %>
+                <a href="<%= blog_path(blog) %>" data-confirm="Êtes-vous sûr?" data-method="delete"><button class="btn btn-danger"type="button" name="button">suppr</button></a>
               </div>
               <% end %>
             </div>

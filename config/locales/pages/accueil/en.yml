@@ -2,7 +2,7 @@ en:
   accueil:
     titre: Home
     creation_communication_digitale: Web design & digital communication
-    slogan: Nous cultivons votre différence
+    slogan: We care your difference
     nous_trouver: Find us
     nous_contacter: Contact us
     inscrire_newsletter: Subscribe to Newsletter
@@ -16,11 +16,33 @@ en:
     alt_tryp1: Design
     alt_tryp2: Develope
     alt_tryp3: Diffuse
-    texte_tryp1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-    texte_tryp2: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-    texte_tryp3: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+    texte_tryp1:  |
+      <p>> intelligent content</p>
+      <p>> design</p>
+      <p>> show your difference</p>
+    texte_tryp2: |
+      <p>> accessibility</p>
+      <p>> responsivity</p>
+      <p>> speed</p>
+    texte_tryp3: |
+      <p>> content management</p>
+      <p>> natural SEO</p>
+      <p>> social networks</p>
     objectif: Our goals
     first: To be sure your investment is good
     second: Really listen what you need
     third: Deliver you the best
     txt_objectif: To design a website is today is quite easy. But, if you ever tried, you certainly discovered that the design is not the only things you need to do. You also have to update, hold on and diffuse your website.
+    titre_visib: DIGITAL VISIBILITY
+    txt_visib: As a professional, in order to realize your websites, you need to trust specialists to bring your business skills online.
+    titre_besoin: YOUR NEEDS
+    txt_besoin1: Créez un partenariat effectif, adapté à vos besoins, avec un prestataire qui vous accompagne dans de nouvelles exigences.
+    txt_besoin2: Create an effective partnership, adapted to your needs, with a service provider that accompanies you in new requirements.
+    titre_last_posts: Last Posts
+    titre_nous_trouver: Find us
+    titre_passion: Team
+    titre_fred: Fred
+    text_fred: Front-End developer, design, SMO, KPI
+    titre_jp: Jean-Pierre
+    text_jp: Back-End developer, content manager, medias, SEO, SEM
+    titre_outils: Our favorites tools

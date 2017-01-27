@@ -10,10 +10,10 @@
     <div class="row">
       <%= form_for :reader do |f| %>
       <div class="col-md-3 col-md-offset-2">
-          <%= f.text_field :name, class: "form-control", placeholder: "Votre nom" %><br />
+          <%= f.text_field :name, class: "form-control", placeholder: t('votre_nom') %><br />
       </div>
       <div class="col-md-4">
-          <%= f.email_field :email, class: "form-control", placeholder: "Votre email" %><br />
+          <%= f.email_field :email, class: "form-control", placeholder: t('votre_email') %><br />
       </div>
       <div class="col-md-1">
           <%= f.submit "Ok", class: "form-control btn-default" %>

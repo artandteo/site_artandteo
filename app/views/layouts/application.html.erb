@@ -48,5 +48,17 @@
     <script type="text/javascript">
       $('a[href="' + this.location.pathname + '"]').parents('li').addClass('active');
     </script>
+    <script type="text/javascript">
+        $(window).scroll(function() {
+          var height = $(window).scrollTop();
+
+          if(height  > 100) {
+            $('.navbar_fixed').css('display','block');
+          }
+          else {
+            $('.navbar_fixed').css('display','none');
+          }
+        });
+    </script>
   </body>
 </html>

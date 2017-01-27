@@ -8,14 +8,32 @@
 
 <p id="notice"><%= notice %></p>
 
-<div class="text-justify">
-  <figure class="blog_image">
-    <img src="<%= @blog.image %>" alt="<%= @blog.image_legende %>">
-    <figcaption><%= @blog.image_legende %></figcaption>
-  </figure>
-  <p class="">
-    <%= raw @blog.contenu %>
-  </p>
+<div class="row">
+
+  <div class="col-sm-12 text-center">
+    <div class="nav-post">
+      <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+    </div>
+    <div class="nav-post">
+      <figure class="blog_image">
+        <img src="<%= @blog.image %>" alt="<%= @blog.image_legende %>">
+        <figcaption><%= @blog.image_legende %></figcaption>
+      </figure>
+    </div>
+    <div class="nav-post">
+      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="row text-justify">
+  <div class="col-sm-12">
+    <p class="">
+      <%= raw @blog.contenu %>
+    </p>
+  </div>
 </div>
 
 <% if user_signed_in? && current_user.is_admin? %>

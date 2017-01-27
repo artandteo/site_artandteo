@@ -25,7 +25,7 @@ Rails.application.routes.draw do
     # ADMINISTRATION #
     get '/admin', to: 'admins#accueil', as: :admin
 
-    scope :admin do 
+    scope :admin do
       resources :users
     end
   end

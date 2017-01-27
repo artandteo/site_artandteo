@@ -49,7 +49,7 @@
                <ul class="dropdown-menu">
                  <li><a href="<%= strategie_digitale_path %>"><%= t('liens.strategie_digitale') %></a></li>
                  <li><a href="<%= web_developpement_path %>"><%= t('liens.web_developpement') %></a></li>
-                 <li><a href="<%= community_management_path %>"><%= t('liens.community_manager') %></a></li>
+                 <!-- <li><a href="<%= community_management_path %>"><%= t('liens.community_manager') %></a></li> -->
                  <li><a href="<%= referencement_path %>"><%= t('liens.referencement') %></a></li>
                </ul>
              </li>
@@ -76,4 +76,68 @@
      </div><!-- /.navbar-collapse -->
    </div><!-- /.container-fluid -->
   </nav>
+
+<!--               Navbar fixed                 -->
+
+  <nav class="navbar_fixed">
+  <div class="navbar navbar-default">
+
+   <div class="container-fluid">
+     <!-- Brand and toggle get grouped for better mobile display -->
+     <div class="navbar-header">
+       <a class="logo_collapsed" href="<%= root_path %>">
+         <img alt="Logo ArtandTeo" src="/img/logfb-ArtandTeo.png">
+       </a>
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+     </div>
+
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+       <div id="menu" class="row">
+
+         <div id="left-menu" class="col-sm-5 text-center">
+           <ul class="nav navbar-nav navbar-right">
+             <li><a href="<%= root_path %>"><%= t('liens.accueil') %> <span class="sr-only">(current)</span></a></li>
+             <li><a class="separator"></a></li>
+             <li><a href="<%= agence_path %>"><%= t('liens.agence') %></a></li>
+             <li><a class="separator"></a></li>
+             <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                 <li><a href="<%= strategie_digitale_path %>"><%= t('liens.strategie_digitale') %></a></li>
+                 <li><a href="<%= web_developpement_path %>"><%= t('liens.web_developpement') %></a></li>
+                 <!-- <li><a href="<%= community_management_path %>"><%= t('liens.community_manager') %></a></li> -->
+                 <li><a href="<%= referencement_path %>"><%= t('liens.referencement') %></a></li>
+               </ul>
+             </li>
+           </ul>
+         </div>
+
+         <div id="logo_at" class="col-sm-2 text-center">
+           <a class="" href="<%= root_path %>">
+             <img alt="Logo ArtandTeo" src="/img/logfb-ArtandTeo.png">
+           </a>
+         </div>
+
+         <div id= "right-menu" class="col-sm-5 text-center">
+           <ul class="nav navbar-nav">
+             <li><a href="<%= portfolio_path %>"><%= t('liens.realisations') %></a></li>
+             <li><a class="separator"></a></li>
+             <li><a href="<%= blogs_path %>"><%= t('blog.titre') %></a></li>
+             <li><a class="separator"></a></li>
+             <li><a href="<%= contact_path %>"><%= t('liens.contact') %></a></li>
+           </ul>
+         </div>
+
+       </div>
+     </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+   </div>
+  </nav>
+
 </header>

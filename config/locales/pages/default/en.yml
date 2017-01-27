@@ -1,4 +1,5 @@
 en:
+  savoir_plus: See more
   liens:
       accueil: Home
       agence: Agency
@@ -6,6 +7,10 @@ en:
       strategie_digitale: Digital Strategy
       web_developpement: Web developement
       community_manager: Community manager
-      referencement: SEO
+      referencement: Visibility
       realisations: Productions
       contact: Contact
+  inscrire_newsletter: Newsletter
+  votre_nom: Your name
+  votre_email: Your email
+  tous_droits_reserves: artandteo all rights reserved

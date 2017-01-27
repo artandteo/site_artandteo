@@ -22,6 +22,46 @@
 
 <section class="tryptic">
   <div class="row">
+
+      <div class="col-md-4 text-center">
+        <a href="<%= strategie_digitale_path %>">
+        <div class="tryptic_1">
+          <h3><%= t('accueil.title_tryp1') %></h3>
+          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          <!-- <img src="/img/tryp1.png" alt="<%= t('accueil.alt_tryp1') %>"> -->
+          <p><%= simple_format(t('accueil.texte_tryp1')) %></p>
+        </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <a href="<%= web_developpement_path %>">
+        <div class="tryptic_2">
+          <h3><%= t('accueil.title_tryp2') %></h3>
+          <i class="fa fa-laptop" aria-hidden="true"></i>
+          <!-- <img src="/img/tryp2.png" alt="<%= t('accueil.alt_tryp2') %>"> -->
+          <p><%= simple_format(t('accueil.texte_tryp2')) %></p>
+        </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <a href="<%= referencement_path %>">
+        <div class="tryptic_3">
+          <h3><%= t('accueil.title_tryp3') %></h3>
+          <i class="fa fa-sitemap" aria-hidden="true"></i>
+          <!-- <img src="/img/tryp3.png" alt="<%= t('accueil.alt_tryp3') %>"> -->
+          <p><%= simple_format(t('accueil.texte_tryp3')) %></p>
+        </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- <section class="tryptic">
+  <div class="row">
     <% for n in 1..3 do %>
       <div class="col-md-4 text-center">
         <div class="tryptic_<%= n %>">
@@ -34,7 +74,7 @@
     <% end %>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="objectifs">
   <div class="row">

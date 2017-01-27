@@ -16,9 +16,18 @@ fr:
     alt_tryp1: Créer
     alt_tryp2: Développer
     alt_tryp3: Diffuser
-    texte_tryp1: L'identité de votre entreprise, de votre commerce, de votre association, de votre projet est unique. La personne qui visitera votre site internet devra vous retrouver dans le contenu et le design.
-    texte_tryp2: La technologie au service de votre identité, des sites internet responsives, des contenus de professionnels...
-    texte_tryp3: Contenu pertinent, ergonomie, structure cohérente, liens internes et externes, réseaux externes, et autres sont autant d'élèments qui permettent d’optimiser votre référencement naturel.
+    texte_tryp1: |
+      <p>> contenu intelligent</p>
+      <p>> design</p>
+      <p>> montrer votre différence</p>
+    texte_tryp2: |
+      <p>> accessibilité</p>
+      <p>> responsivité</p>
+      <p>> rapidité</p>
+    texte_tryp3: |
+      <p>> content management</p>
+      <p>> référencement naturel</p>
+      <p>> réseaux sociaux</p>
     objectif: Nos objectifs
     first: S’assurer de la rentabilité de votre investissement
     second: Ecouter réellement votre besoin
@@ -36,7 +45,7 @@ fr:
     titre_nous_trouver: Nous trouver
     titre_passion: Les passionnés
     titre_fred: Fred
-    text_fred: Lorem ipsum dolor sit amet, consectetur adipisicing
+    text_fred: Développeur Front-End, design, SMO, KPI
     titre_jp: Jean-Pierre
-    text_jp: Lorem ipsum dolor sit amet, consectetur adipisicing
+    text_jp: Développeur Back-End, rédaction, médias, SEO, SEM
     titre_outils: Nos outils préférés

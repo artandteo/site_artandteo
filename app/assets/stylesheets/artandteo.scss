@@ -25,6 +25,7 @@ $btn-default-border: $orange;
 $btn-default-color: $orange;
 $btn-info-bg: $orange;
 $btn-info-color: $blanc;
+$btn-danger-color: $blanc;
 
 $grid-float-breakpoint: 940px;
 
@@ -36,6 +37,14 @@ $screen-lg: 1200px;*/
 
 div.content {
   margin: 0 70px 0 70px;
+}
+
+.btn-danger a:visited {
+  color: $blanc !important;
+}
+
+.btn-default a:hover, .btn-default:hover a {
+  color: $blanc;
 }
 
 .legended {
@@ -217,6 +226,44 @@ h3:after {
 
 //---------------- nav-bar --------------------
 
+.navbar_fixed {
+  display: none;
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  .navbar {
+    min-height: 0;
+    height: 46px;
+    background-color: $taupe;
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: $blanc;
+  }
+  li.active > a {
+    background-color: $taupe !important;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar-toggle {
+    margin-top: 5px;
+  }
+  ul.dropdown-menu {
+    background-color: $taupe;
+    li > a {
+      color: $blanc;
+    }
+  }
+}
+
+
+div#menu.row {
+  background-color: $blanc;
+  height: 0;
+}
+
 li.active > a {
   background-color: $blanc !important;
 }
@@ -338,28 +385,52 @@ li.active > a::after {
   text-shadow: 1px 1px 1px $taupe;
   padding: 0 !important;
   margin: 0 !important;
+  color: $taupe;
+}
+
+@mixin tryp_card {
+  background-color: $gris_pale;
+  margin: 30px;
+  padding: 20px 30px 30px 30px;
+  height: 300px;
+  p {
+    color: $taupe;
+  }
+  i {
+    font-size: 4em;
+    color: $taupe;
+    margin: 10px 0 10px 0;
+  }
 }
 
 .tryptic_1 {
-  margin: 10px;
+  @include tryp_card;
   h3 {
-    color: $taupe;
     @include tryp_h3;
   }
 }
+div.tryptic_1:hover {
+  background-color: darken($gris_pale,3%);
+}
+
 .tryptic_2 {
-  margin: 0 10px 0 10px;
+  @include tryp_card;
   h3 {
-    color: $vert;
     @include tryp_h3;
   }
 }
+div.tryptic_2:hover {
+  background-color: darken($gris_pale,3%);
+}
+
 .tryptic_3 {
-  margin: 0 10px 0 10px;
+  @include tryp_card;
   h3 {
-    color: $orange;
     @include tryp_h3;
   }
+}
+div.tryptic_3:hover {
+  background-color: darken($gris_pale,3%);
 }
 
 .besoin {
@@ -484,10 +555,20 @@ li.active > a::after {
 // -------------- Page Blog -----------------
 
 figure.blog_image {
-  float: left;
-  padding: 0 20px 10px 0;
+  margin: auto;
+  padding: auto;
+  text-align: center;
   img {
     width: 320px;
+  }
+}
+
+.nav-post {
+  display: inline-block;
+  vertical-align: middle;
+  i {
+    margin: 0 20px 0 20px;
+    font-size: 48px;
   }
 }
 
@@ -516,14 +597,8 @@ figure.blog_image {
     text-align: center;
   }
   h3:before, h3:after {
-    width: 1em;
+    display: none;
   }
-  h3:before {
-    margin-left:-10%;
-    margin-right:1em}
-  h3:after {
-    margin-right:-10%;
-    margin-left:1em;}
 }
 
 // -------------- Page Développement Web -----------------
@@ -533,7 +608,7 @@ figure.blog_image {
   background: url(/img/bandeau_4.jpg) no-repeat center center;
 }
 
-// -------------- Page Développement Web -----------------
+// -------------- Visibilité -----------------
 
 .palette_ref {
   background-color: $gris_pale;
@@ -545,14 +620,8 @@ figure.blog_image {
     text-align: center;
   }
   h3:before, h3:after {
-    width: 1em;
+    display: none;
   }
-  h3:before {
-    margin-left:-10%;
-    margin-right:1em}
-  h3:after {
-    margin-right:-10%;
-    margin-left:1em;}
 }
 
 // -------------- Page Développement Web -----------------
@@ -569,7 +638,16 @@ figure.blog_image {
   div.content {
     margin: 0 10px 0 10px;
   }
-
+  div#menu.row {
+    background-color: $gris_pale;
+    height: 100%;
+  }
+  .navbar_fixed .navbar-default .navbar-nav > li > a {
+    color: $taupe;
+  }
+  .navbar_fixed .navbar-default .navbar-nav > li.active > a {
+    color: $blanc;
+  }
   .spacing {
     margin-top: 20px;
   }
