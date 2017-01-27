@@ -18,7 +18,7 @@
         <div class="post col-centered">
           <img class="img-responsive" src="<%= blog.image %>" alt="<%= blog.image_legende %>">
           <div class="text_post col-centered">
-            <h2><%= blog.titre %></h2>
+            <h2><%= blog.titre.byteslice(0,20) %>...</h2>
             <p class="d_post">Posté le <%= blog.created_at.strftime('%d/%m/%Y à %H:%M') %></p>
             <div class="contenu"><%= raw (sanitize remove_tags(blog.contenu), tags: %w(p)).truncate(250) %></div>
             <div class="sav_plus row col-centered">
@@ -32,7 +32,7 @@
                 <%= link_to 'Editer', edit_blog_path(blog), class: "btn btn-primary" %>
               </div>
               <div class="col-sm-4 col-centered">
-                <%= link_to 'Supprimer', blog, method: :delete, data: { confirm: 'Êtes-vous sûr?' }, class: "btn btn-danger" %>
+                <%= link_to 'Suppr', blog, method: :delete, data: { confirm: 'Êtes-vous sûr?' }, class: "btn btn-danger" %>
               </div>
               <% end %>
             </div>
@@ -42,4 +42,5 @@
   <% end %>
 
 </div>
+<br />
 </div>

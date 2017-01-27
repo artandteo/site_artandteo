@@ -82,7 +82,7 @@
 <section class="last_posts">
   <div class="row">
     <div class="col-md-12 text-center">
-      <h3><%= t('accueil.titre_last_posts') %></h3>
+      <h3><%= (t('accueil.titre_last_posts')) %></h3>
     </div>
   </div>
   <div class="row">
@@ -91,7 +91,7 @@
         <div class="post">
           <img class="img-responsive" src="<%= post.image %>" alt="<%= post.image_legende %>" />
           <div class="text_post">
-            <h2><%= post.titre %></h2>
+            <h2><%= post.titre.byteslice(0,20) %>...</h2>
             <p class="d_post">Posté le <%= post.created_at.strftime('%d/%m/%Y à %H:%M') %></p>
             <div class="contenu">
             <%= raw (sanitize remove_tags(post.contenu), tags: %w(p)).truncate(250) %>

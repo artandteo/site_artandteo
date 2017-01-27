@@ -390,6 +390,10 @@ li.active > a::after {
   max-width: 400px;
   background-color: $blanc;
   margin: auto;
+  img {
+    height: 240px;
+    width: 100%;
+  }
   .text_post {
     margin: 0 20px 10px 20px;
     p.d_post {
