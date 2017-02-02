@@ -22,33 +22,38 @@
     </div>
   </div>
 
-  <div id="social-footer" class="row">
+  <div id="social-footer">
+    <div class="row">
     <div class="col-md-12 text-center">
-      <span>
-        <a href="https://www.facebook.com/artandteo/?fref=ts" target="_blank" alt="Facebook ArtandTeo"><img src="/img/icons/fb.png" alt="Facebook ArtandTeo"></a>
-        <a href="https://www.linkedin.com/in/frédéric-reubrecht-2aba76107?trk=nav_responsive_tab_profile" target="_blank" alt="Linkedin ArtandTeo"><img src="/img/icons/lk.png" alt="Linkedin ArtandTeo"></a>
-        <a href="https://twitter.com/artandteo" target="_blank" alt="Twitter ArtandTeo"><img src="/img/icons/tw.png" alt="Twitter"></a>
-        <a href="https://plus.google.com/u/0/103348544084626253437" target="_blank" alt="Google+ ArtandTeo"><img src="/img/icons/gp.png" alt="Google+ ArtandTeo"></a>
-      </span>
+        <span>
+          <a href="https://www.facebook.com/artandteo/?fref=ts" target="_blank" alt="Facebook ArtandTeo"><img src="/img/icons/fb.png" alt="Facebook ArtandTeo"></a>
+          <a href="https://www.linkedin.com/in/frédéric-reubrecht-2aba76107?trk=nav_responsive_tab_profile" target="_blank" alt="Linkedin ArtandTeo"><img src="/img/icons/lk.png" alt="Linkedin ArtandTeo"></a>
+          <a href="https://twitter.com/artandteo" target="_blank" alt="Twitter ArtandTeo"><img src="/img/icons/tw.png" alt="Twitter"></a>
+          <a href="https://plus.google.com/u/0/103348544084626253437" target="_blank" alt="Google+ ArtandTeo"><img src="/img/icons/gp.png" alt="Google+ ArtandTeo"></a>
+        </span>
+      </div>
     </div>
   </div>
 
-  <div id="menu-footer" class="row">
-    <div class="col-md-3">
-      <a href="<%= mentions_legales_path %>"><%= t('mlegales.titre') %></a>
+  <div id="menu-footer">
+    <div class="row">
+      <div class="col-md-3">
+        <a href="<%= mentions_legales_path %>"><%= t('mlegales.titre') %></a>
+      </div>
+      <div class="col-md-3">
+        <a href="<%= social_wall_path %>"><%= t('social_wall') %></a>
+      </div>
+      <div class="col-md-3">
+        <% if user_signed_in? %>
+        <a href="<%= destroy_user_session_path %>" alt="<% t('deconnexion') %>" data-method="delete"><%= t('deconnexion') %></a>
+        <% else %>
+        <a href="<%= new_user_session_path %>" alt="<% t('connexion') %>"><%= t('connexion') %></a>
+        <% end %>
+      </div>
+      <div class="col-md-3">
+        <a href=""><%= t('tous_droits_reserves') %></a>
+      </div>
     </div>
-    <div class="col-md-3">
-      <a href="<%= social_wall_path %>"><%= t('social_wall') %></a>
-    </div>
-    <div class="col-md-3">
-      <% if user_signed_in? %>
-      <a href="<%= destroy_user_session_path %>" alt="<% t('deconnexion') %>" data-method="delete"><%= t('deconnexion') %></a>
-      <% else %>
-      <a href="<%= new_user_session_path %>" alt="<% t('connexion') %>"><%= t('connexion') %></a>
-      <% end %>
-    </div>
-    <div class="col-md-3">
-      <a href=""><%= t('tous_droits_reserves') %></a>
-    </div>
+  </div>
 
 </footer>

@@ -578,6 +578,7 @@ figure.blog_image {
 .bandeau_contact {
   @include bandeau;
   background: url(/img/bandeau_3.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 // -------------- Page Stratégie digitale -----------------
@@ -629,6 +630,14 @@ figure.blog_image {
 .mentions {
   background-color: $gris_pale;
   padding: 30px 0 30px 0;
+}
+
+// -------------- Page Social Wall -----------------
+
+.fb-post {
+  height: 400px;
+  background-color: $gris_pale;
+  margin-top: 20px;
 }
 
 /* Extra small devices (phones, less than 768px) */

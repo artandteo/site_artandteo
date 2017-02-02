@@ -1,50 +1,45 @@
-<h1>Social wall</h1>
+<div class="bandeau_contact">
+  <div class="col-sm-12 text-center">
+    <h1><%= t('social.titre') %></h1>
+  </div>
+</div>
 
-<!-- Initialisation SDK Facebook -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '1656043924700769',
-          xfbml      : true,
-          version    : 'v2.8'
-        });
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8&appId=1656043924700769";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
-        FB.AppEvents.logPageView();
-        FB.getLoginStatus(function(response) {
-          if (response.status === 'connected') {
-            console.log('Logged in.');
-          }
-          else {
-            FB.login();
-          }
-        });
-      };
+<div class="row text-center">
 
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/fr_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
+  <div class="col-sm-6">
+    <div class="fb-post" data-href="https://www.facebook.com/artandteo/posts/1694713014172724:0" data-width="500" data-show-text="true">
+      <blockquote cite="https://www.facebook.com/artandteo/posts/1694713014172724:0" class="fb-xfbml-parse-ignore">Publié par <a href="https://www.facebook.com/artandteo/">Facebook</a> sur&nbsp;<a href="https://www.facebook.com/artandteo/posts/1694713014172724:0">jeudi 27 août 2015</a>
+      </blockquote>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="fb-post" data-href="https://www.facebook.com/artandteo/photos/a.1514062905571070.1073741828.1513740068936687/1698737037103655/?type=3" data-width="500" data-show-text="true">
+      <blockquote cite="https://www.facebook.com/artandteo/photos/a.1514062905571070.1073741828.1513740068936687/1698737037103655/?type=3" class="fb-xfbml-parse-ignore">Publié par <a href="https://www.facebook.com/artandteo/">Facebook</a> sur&nbsp;<a href="https://www.facebook.com/artandteo/photos/a.1514062905571070.1073741828.1513740068936687/1698737037103655/?type=3">jeudi 27 août 2015</a>
+      </blockquote>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="fb-post" data-href="https://www.facebook.com/artandteo/posts/1697003637276995:0" data-width="500" data-show-text="true">
+      <blockquote cite="https://www.facebook.com/artandteo/posts/1697003637276995:0" class="fb-xfbml-parse-ignore">Publié par <a href="https://www.facebook.com/artandteo/">Facebook</a> sur&nbsp;<a href="https://www.facebook.com/artandteo/posts/1697003637276995:0">jeudi 27 août 2015</a>
+      </blockquote>
+    </div>
+  </div>
 
-    <script>
-    // Only works after `FB.init` is called
-    function myFacebookLogin() {
-      FB.login(function(){}, {scope: 'publish_actions'});
-    }
-    </script>
-    <button onclick="myFacebookLogin()">Login with Facebook</button>
+</div>
 
-        <script type="text/javascript">
-          window.fbAsyncApi = function() {
-            FB.api(
-            '/me/feed',
-            'GET',
-            {},
-            function(response) {
-                // Insert your code here
-            });
-          };
-        </script>
+
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>

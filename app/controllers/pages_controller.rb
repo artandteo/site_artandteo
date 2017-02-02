@@ -44,4 +44,8 @@ class PagesController < ApplicationController
 	def mentions_legales
 		@titre = t('mlegales.titre')
 	end
+
+	def social_wall
+		@titre = t('social.titre')
+	end
 end
