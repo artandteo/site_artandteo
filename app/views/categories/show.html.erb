@@ -1,4 +1,4 @@
-<h1>Affichage des articles : <%= @categorie.categorie_nom %></h1>
+<h1><%= t('categorie.afficher') %> : <%= @categorie.categorie_nom %></h1>
 
 <% @categorie.blogs.each do |blog| %>
 	<div class="col-sm-4 spacing">

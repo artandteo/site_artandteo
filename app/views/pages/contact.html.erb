@@ -14,16 +14,16 @@
   <div class="row">
     <%= form_for :contact do |f| %>
       <div class="col-md-8 col-md-offset-2">
-          Votre nom: <%= f.text_field :name, class: "form-control" %><br />
+          Votre nom: <%= f.text_field :name, required: true, class: "form-control" %><br />
       </div>
       <div class="col-md-8 col-md-offset-2">
-          Votre email: <%= f.email_field :email, class: "form-control" %><br />
+          Votre email: <%= f.email_field :email, required: true, class: "form-control" %><br />
       </div>
       <div class="col-md-8 col-md-offset-2">
-          Objet: <%= f.text_field :objet, class: "form-control" %><br />
+          Objet: <%= f.text_field :objet, required: true, class: "form-control" %><br />
       </div>
       <div class="col-md-8 col-md-offset-2">
-          Votre message: <%= f.text_field :message, class: "form-control" %><br />
+          Votre message: <%= f.text_area :message, required: true, class: "form-control" %><br />
       </div>
       <br />
       <div class="col-md-2 col-md-offset-5">

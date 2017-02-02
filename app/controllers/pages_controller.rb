@@ -34,7 +34,11 @@ class PagesController < ApplicationController
 
 	def contact
 		@titre = t('contact.titre')
-		ContactMailer.contact().deliver_now
+	end
+
+	def send_mail
+		flash[:success] = t('contact.message_succes')
+		redirect_to contact_path  if ContactMailer.contact(params[:contact][:email], params[:contact][:objet], params[:contact][:message]).deliver_now
 	end
 
 	def mentions_legales

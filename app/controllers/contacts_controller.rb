@@ -1,13 +1,13 @@
-class ContactController < ApplicationController
+class ContactsController < ApplicationController
+
 	def new
-    	@contact = Contact.new
+    	@contact = Contact
   	end
  
   	def create
-    	@contact = Contact.new params[:contact]
+    	@contact = Contact.new(params[:contact])
 	    if @contact.valid?
-	      Mailer.contact_form(@contact).deliver # Je vais expliquer cette ligne juste après...
-	      redirect_to new_contact_path, flash: {success: t(:"create.message_has_been_sent")}
+	      ContactMailer.contact(@contact).deliver_now.deliver_now
 	    else
 	      render :new
 	    end

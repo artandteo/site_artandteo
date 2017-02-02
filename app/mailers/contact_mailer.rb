@@ -1,5 +1,7 @@
 class ContactMailer < ApplicationMailer
-	def contact
-		mail(to: 'contact@artandteo.com', subject: 'Sujet de test')
+	def contact(expediteur, objet, message)
+		@objet = objet
+		@message = message
+		mail(to: 'contact@artandteo.com', from: expediteur, subject: objet)
 	end
 end

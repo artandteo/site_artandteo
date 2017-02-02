@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     get '/realisations', to: 'pages#portfolio', as: :portfolio
     get '/agence', to: 'pages#agence', as: :agence
     get '/contact', to: 'pages#contact', as: :contact
+    post '/contact', to: 'pages#send_mail'
     get '/mentions_legales', to: 'pages#mentions_legales', as: :mentions_legales
 
     # optionel

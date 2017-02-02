@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
+  before_action :blog_prec, :blog_suiv, only: [:show]
   before_action :is_admin, only: [:edit, :update, :destroy]
   before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
 
@@ -18,6 +19,8 @@ class BlogsController < ApplicationController
   # GET /blogs/1.json
   def show
     @titre = t('blog.titre') 
+    @prec = blog_prec
+    @suiv = blog_suiv
   end
 
   # GET /blogs/new
@@ -39,14 +42,9 @@ class BlogsController < ApplicationController
     @blog = Blog.new(blog_params)
     @blog.id = Blog.last.id + 1
     @blog.users_id = current_user.id
-    respond_to do |format|
-      if @blog.save
-        format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
-        format.json { render :show, status: :created, location: @blog }
-      else
-        format.html { render :new }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
-      end
+    if @blog.save
+      flash[:success] = t('blog.post_creer')
+      redirect_to @blog
     end
   end
 
@@ -54,14 +52,9 @@ class BlogsController < ApplicationController
   # PATCH/PUT /blogs/1.json
   def update
     @titre = t('blog.titre') 
-    respond_to do |format|
-      if @blog.update(blog_params)
-        format.html { redirect_to @blog, notice: 'Blog was successfully updated.' }
-        format.json { render :show, status: :ok, location: @blog }
-      else
-        format.html { render :edit }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
-      end
+    if @blog.update(blog_params)
+      flash[:success] = t('blog.post_editer')
+      redirect_to @blog
     end
   end
 
@@ -69,10 +62,8 @@ class BlogsController < ApplicationController
   # DELETE /blogs/1.json
   def destroy
     @blog.destroy
-    respond_to do |format|
-      format.html { redirect_to blogs_url, notice: 'Blog was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    flash[:success] = t('blog.post_supprimer')    
+    redirect_to blogs_url
   end
 
   private
@@ -88,6 +79,19 @@ class BlogsController < ApplicationController
 
     def is_admin
       redirect_to root_path if signed_in? && !current_user.is_admin?
+    end
+
+    def blog_prec
+      if params[:id] === @blog
+        @blog.id = @blog.id - 1
+      end
+    end
+
+    def blog_suiv
+      @blog = Blog.find(params[:id])
+      if params[:id] === @blog.id
+        @blog.id = params[:id] + 1
+      end
     end
 
 end

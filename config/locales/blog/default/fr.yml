@@ -1,3 +1,16 @@
 fr: 
   blog:
     titre: "Blog"
+    post_creer: "Le nouvel article vient d'être publié."
+    post_editer: "L'article a été mis à jour."
+    post_supprimer: "L'article a été effacé."
+
+  categorie:
+    titre: "Catégories"
+    nom: "Nom de la catégorie"
+    cat_nom: "Nom de la catégorie"
+    cat_creer: "La catégorie a été crée."
+    cat_editer: "La catégorie a été modifié."
+    cat_supprimer: "La catégorie a été supprimé."
+    btn-creer: "Ajouter une nouvelle catégorie"
+    afficher: "Liste des articles de "

@@ -1,3 +1,16 @@
-en: 
+fr: 
   blog:
     titre: "Blog"
+    post_creer: "New post successfully created."
+    post_editer: "New post successfully updated."
+    post_supprimer: "New post successfully deleted."
+
+  categorie:
+    titre: "Categories"
+    nom: "Category's name"
+    cat_nom: "Category's name"
+    cat_creer: "New category successfully deleted."
+    cat_editer: "New category successfully updated."
+    cat_supprimer: "New category successfully deleted."
+    btn-creer: "Add new category"
+    afficher: "All posts of "
