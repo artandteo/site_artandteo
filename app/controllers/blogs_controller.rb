@@ -1,6 +1,5 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
-  before_action :blog_prec, :blog_suiv, only: [:show]
   before_action :is_admin, only: [:edit, :update, :destroy]
   before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
 
@@ -18,9 +17,9 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
-    @titre = t('blog.titre') 
-    @prec = blog_prec
-    @suiv = blog_suiv
+    @titre = t('blog.titre')
+    @blogs = Blog.all
+    @last = Blog.last
   end
 
   # GET /blogs/new
@@ -66,6 +65,8 @@ class BlogsController < ApplicationController
     redirect_to blogs_url
   end
 
+  
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_blog
@@ -79,19 +80,6 @@ class BlogsController < ApplicationController
 
     def is_admin
       redirect_to root_path if signed_in? && !current_user.is_admin?
-    end
-
-    def blog_prec
-      if params[:id] === @blog
-        @blog.id = @blog.id - 1
-      end
-    end
-
-    def blog_suiv
-      @blog = Blog.find(params[:id])
-      if params[:id] === @blog.id
-        @blog.id = params[:id] + 1
-      end
     end
 
 end
