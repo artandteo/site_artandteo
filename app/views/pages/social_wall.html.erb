@@ -9,11 +9,26 @@
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8&appId=1656043924700769";
+      js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8&appId='1656043924700769'";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="row text-center">
+<script type="text/javascript">
+function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api(
+      '/artandteo/feed',
+      'GET',
+      {},
+      function(response) {
+              console.log(response);
+      }
+    );
+  }
+</script>
+
+
+<!-- <div class="row text-center">
 
   <div class="col-sm-6">
     <div class="fb-post" data-href="https://www.facebook.com/artandteo/posts/1694713014172724:0" data-width="500" data-show-text="true">
@@ -34,6 +49,11 @@
     </div>
   </div>
 
+</div> -->
+
+<img src="" id="profileImage"/>
+
+<div id="status">
 </div>
 
 

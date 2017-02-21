@@ -82,16 +82,42 @@ Rails.application.configure do
   end
 
   # Do not dump schema after migrations.
-  config.active_record.dump_schema_after_migration = false
+config.active_record.dump_schema_after_migration = false
 
-  ActionMailer::Base.smtp_settings = {
-  :port           => '587', # or 2525
-  :address        => 'smtp.gmail.com',
-  :user_name      => 'artandteo@gmail.com',
-  :password       => 'manouka2',
-  :domain         => 'gmail.com',
-  :authentication => "plain", # or :plain for plain-text authentication
-  :enable_starttls_auto => true # or false for unencrypted connection
-}
-ActionMailer::Base.delivery_method = :smtp
+# config.action_mailer.default_url_options = { host: 'artandteo.com' }
+
+
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+address:              'smtp.artandteo.com',
+port:                 587,
+domain:               'artandteo.com',
+user_name:            'contact@artandteo.com',
+password:             'manoukaa&t',
+authentication:       'plain',
+openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
+enable_starttls_auto: true  }
+
+#  ActionMailer::Base.smtp_settings = {
+#   :port           => '587', # or 2525
+#   :address        => 'SSL0.OVH.NET',
+ #:user_name      => 'artandteo@gmail.com',
+ #:password       => 'manouka2',
+ #:domain         => 'artandteo.com',
+#   :ssl                   =>  false,
+#   :openssl_verify_mode => OpenSSL::SSL::VERIFY_NONE,
+#   :authentication => "plain", # or :plain for plain-text authentication
+ #:enable_starttls_auto => true # or false for unencrypted connection
+# }
+#ActionMailer::Base.delivery_method = :smtp
+# ActionMailer::Base.sendmail_settings = {
+#        location: "/usr/sbin/sendmail",
+#        arguments: '-i -t'
+#}
+
+#ActionMailer::Base.delivery_method = :sendmail
+#ActionMailer::Base.perform_deliveries = true
+#ActionMailer::Base.raise_delivery_errors = true
+#ActionMailer::Base.default charset: "utf-8"
 end
+                                       
