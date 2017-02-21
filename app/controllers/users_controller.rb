@@ -10,6 +10,7 @@ class UsersController < ApplicationController
 	def new 
 		@titre = t('admin.nouvel_utilisateur')
 		@user = User.new
+		puts @user.inspect
 	end
 
 	def edit
@@ -19,6 +20,7 @@ class UsersController < ApplicationController
 
 	def create
 		@user = User.new(set_params)
+		puts @user.inspect
 		if @user.valid?
 			@user.save
 			redirect_to users_path, flash: { success: "L'utilisateur a bien été créer !" }
