@@ -195,16 +195,6 @@ h3:after {
   padding-right: 10px;
 }
 
-.lg-sel {}
-
-.lg-unsel {
-  opacity: 0.25;
-}
-
-.lg-unsel:hover {
-    opacity: 0.5;
-}
-
 .contacts {
   a:hover {
    opacity: 0.25;
@@ -738,6 +728,11 @@ figure.blog_image {
     border: none;
     height: auto;
   }
+
+  .logos_outils > div {
+    text-align: center;
+  }
+
 }
 
 /* Small devices (tablets, 768px and up) */
