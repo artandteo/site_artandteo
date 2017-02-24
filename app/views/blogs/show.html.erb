@@ -7,7 +7,6 @@
 <div class="content">
 
 <p id="notice"><%= notice %></p>
-
 <div class="row">
 
   <div class="col-sm-12 text-center">
@@ -31,31 +30,28 @@
     </div>
     <% end %>
     <div class="nav-post">
-      <figure class="blog_image">
-        <img src="<%= @blog.image %>" alt="<%= @blog.image_legende %>">
-        <figcaption><%= @blog.image_legende %></figcaption>
-      </figure>
-    </div>
+      <div class="blog_image">
+        <img class="img-responsive center-block" src="<%= @blog.image %>" alt="<%= @blog.image_legende %>">
+      </div>
+  </div>
     <% if @blog.id < @dernier %>
     <div class="nav-post">
       <a href="<%= blog_path(nex) %>"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
     </div>
     <% end %>
   </div>
-
 </div>
-
-<p>
+<h6>
 <% if @blog.categorie %>
-<%= @blog.categorie.categorie_nom %>
+  <U>Catégorie :</U> <%= @blog.categorie.categorie_nom %>
 <% end %>
-</p>
+</h6>
 
 <div class="row text-justify">
   <div class="col-sm-12">
-    <p class="">
-      <%= raw @blog.contenu %>
-    </p>
+    <div class="blog_content">
+        <%= raw @blog.contenu %>
+    </div>
   </div>
 </div>
 

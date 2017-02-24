@@ -544,10 +544,9 @@ div.tryptic_3:hover {
 
 // -------------- Page Blog -----------------
 
-figure.blog_image {
-  margin: auto;
-  padding: auto;
-  text-align: center;
+.blog_image {
+  display: inline-block;
+  vertical-align: middle;
   img {
     width: 320px;
   }
@@ -559,6 +558,15 @@ figure.blog_image {
   i {
     margin: 0 20px 0 20px;
     font-size: 48px;
+  }
+}
+
+.blog_content {
+  h4 {
+    padding: 20px 0 10px 0;
+  }
+  p {
+    padding-top: 10px;
   }
 }
 
@@ -651,6 +659,12 @@ figure.blog_image {
     margin-top: 20px;
   }
 
+  .logo_collapsed {
+    img {
+      width: 70px;
+      padding: 5px 0 0 5px;
+    }
+  }
   #logo_at, .txttb {
     display: none;
   }
@@ -713,6 +727,9 @@ figure.blog_image {
     }
   }
 
+  h3 {
+    font-size: 20px !important;
+  }
   h3:before, h3:after {
     width: 1em;
   }
@@ -731,6 +748,54 @@ figure.blog_image {
 
   .logos_outils > div {
     text-align: center;
+  }
+
+  .besoin {
+    background: url(/img/mb_phone.jpg) no-repeat center center;
+    opacity: 0.9;
+    background-size: cover;
+    height: 750px;
+    padding-top: 30px;
+    .card_besoin {
+      background-color: $blanc;
+      margin: 10px;
+      padding: 20px;
+      h4 { padding-bottom: 20px;}
+      .sav_plus {
+        text-align: right;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .logos_outils {
+    img {
+      width: 45px;
+    }
+  }
+
+  .objectifs {
+    padding: 0 10px 10px 10px;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .bandeau_blog {
+    margin-bottom: 0;
+    height: auto;
+    h1 {
+      font-size: 36px;
+      margin-top: 0;
+    }
+  }
+
+  .nav-post {
+    i {
+      font-size: 40px;
+      margin: 0;
+    }
   }
 
 }
