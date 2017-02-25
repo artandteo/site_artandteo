@@ -782,11 +782,12 @@ div.tryptic_3:hover {
     }
   }
 
-  .bandeau_blog {
+  .bandeau_contact,.bandeau_stratdig, .bandeau_devweb, .bandeau_blog, .bandeau_titre {
     margin-bottom: 0;
     height: auto;
     h1 {
       font-size: 36px;
+      padding: 10px 0 10px 0;
       margin-top: 0;
     }
   }
