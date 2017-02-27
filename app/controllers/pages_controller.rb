@@ -1,5 +1,10 @@
 class PagesController < ApplicationController
 	def accueil
+		@abonnes = Newsletter.all
+		@abonnes.each do |a|
+			SendNewsletterJob.set(wait: 20.seconds).perform_later(a.email)
+		end
+
 		@titre = t('accueil.titre')
 		@last_post = Blog.includes(:user).all.order('created_at DESC').limit(2)
 	end
@@ -47,5 +52,9 @@ class PagesController < ApplicationController
 
 	def social_wall
 		@titre = t('social.titre')
+	end
+
+	def newsletter
+		
 	end
 end

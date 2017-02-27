@@ -26,6 +26,9 @@ Rails.application.routes.draw do
     # ADMINISTRATION #
     get '/admin', to: 'admins#accueil', as: :admin
 
+    # NEWSLETTER #
+    post '/', to: "newsletters#create"
+
     scope :admin do
       resources :users
       resources :categories

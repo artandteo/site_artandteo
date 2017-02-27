@@ -98,6 +98,8 @@ config.action_mailer.default_url_options = { host: 'artandteo.com' }
 # openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
 # enable_starttls_auto: true  }
 
+config.active_job.queue_adapter = :delayed_job
+
 ActionMailer::Base.delivery_method = :smtp
  ActionMailer::Base.sendmail_settings = {
         location: "/usr/sbin/sendmail",
