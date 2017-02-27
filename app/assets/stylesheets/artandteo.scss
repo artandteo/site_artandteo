@@ -35,8 +35,21 @@ $screen-lg: 1200px;*/
 
 //---------------- GENERAL --------------------
 
+.container {
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 div.content {
-  margin: 0 70px 0 70px;
+  margin: 0 0px 0 0px;
+}
+div.portfolio {
+  margin: 0 60px 0 60px;
 }
 
 .btn-danger a:visited {
@@ -453,7 +466,7 @@ div.tryptic_3:hover {
   margin: auto;
   img {
     height: 240px;
-    width: 100%;
+    margin: auto;
   }
   .text_post {
     margin: 0 20px 10px 20px;
@@ -638,11 +651,20 @@ div.tryptic_3:hover {
   margin-top: 20px;
 }
 
+// ------------- portfolio -------------
+
+img.img-responsive.aligncenter {
+  margin: auto;
+}
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
 @media (max-width: 940px) {
   div.content {
+    margin: 0 0px 0 0px;
+  }
+  div.portofolio {
     margin: 0 10px 0 10px;
   }
   div#menu.row {
