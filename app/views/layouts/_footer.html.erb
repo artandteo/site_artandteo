@@ -1,27 +1,5 @@
 <footer>
 
-  <div id="newsletter">
-    <div class="row">
-      <div class="col-md-12 text-center">
-            <h3><%= t('inscrire_newsletter') %></h3>
-      </div>
-    </div>
-
-    <div class="row">
-      <%= form_for :reader do |f| %>
-      <div class="col-md-3 col-md-offset-2">
-          <%= f.text_field :name, class: "form-control", placeholder: t('votre_nom') %><br />
-      </div>
-      <div class="col-md-4">
-          <%= f.email_field :email, class: "form-control", placeholder: t('votre_email') %><br />
-      </div>
-      <div class="col-md-1">
-          <%= f.submit "Ok", class: "form-control btn-default" %>
-      </div>
-      <% end %>
-    </div>
-  </div>
-
   <div id="social-footer">
     <div class="row">
     <div class="col-md-12 text-center">
