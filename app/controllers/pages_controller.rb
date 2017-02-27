@@ -1,9 +1,17 @@
 class PagesController < ApplicationController
 	def accueil
-		@abonnes = Newsletter.all
-		@abonnes.each do |a|
-			SendNewsletterJob.set(wait: 20.seconds).perform_later(a.email)
+		current_time = DateTime.now
+		puts current_time.strftime "%d/%m/%Y"
+		@date = Newsletter.first
+		if current_time >= @date.date
+			@abonne = Newsletter.all
+			@abonne.each do |a|
+				NewsletterMailer.send_email(a.email).deliver_now
+				Newsletter.update(:date => current_time+6.months)
+			end
 		end
+		
+
 
 		@titre = t('accueil.titre')
 		@last_post = Blog.includes(:user).all.order('created_at DESC').limit(2)
