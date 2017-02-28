@@ -10,7 +10,7 @@
       </span>
       <span class="languages">
         <a href="/" alt="Définir la langue du site en français"><img class="lg-sel" src="/img/icons/flag_france.png" title="Français"/></a>
-        <a href="<%= url_for(:locale => 'en') %>" alt="Définir la langue du site en anglais"><img class="lg-unsel" src="/img/icons/flag_uk.png" title="Anglais"></a>
+        <a href="/en<%= request.path %>" alt="Définir la langue du site en anglais"><img class="lg-unsel" src="/img/icons/flag_uk.png" title="Anglais"></a>
       </span>
     </div>
 
