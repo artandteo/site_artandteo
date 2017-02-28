@@ -17,7 +17,7 @@ class BlogsController < ApplicationController
     @titre = t('blog.titre')
     @premier = Blog.first.id
     @dernier = Blog.last.id
-    @blogs = Blog.includes(:categorie).includes(:user).all
+    @blogs = Blog.friendly_id.includes(:categorie).includes(:user).all
   end
 
   # GET /blogs/new
