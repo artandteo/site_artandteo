@@ -7,14 +7,17 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Categorie.create(:categorie_nom => "Web Design")
-Categorie.create(:categorie_nom => "Divers")
-Categorie.create(:categorie_nom => "Sans")
-Categorie.create(:categorie_nom => "Information")
-Categorie.create(:categorie_nom => "Programmation")
-Categorie.create(:categorie_nom => "Front End")
-Categorie.create(:categorie_nom => "Back End")
-Categorie.create(:categorie_nom => "Stratégie Digitale")
-Categorie.create(:categorie_nom => "Developpement Web")
-Categorie.create(:categorie_nom => "Visibilité")
-Categorie.create(:categorie_nom => "Test")
+if Categorie.count == 0
+	Categorie.create(:categorie_nom => "Web Design")
+	Categorie.create(:categorie_nom => "Divers")
+	Categorie.create(:categorie_nom => "Sans")
+	Categorie.create(:categorie_nom => "Information")
+	Categorie.create(:categorie_nom => "Programmation")
+	Categorie.create(:categorie_nom => "Front End")
+	Categorie.create(:categorie_nom => "Back End")
+	Categorie.create(:categorie_nom => "Stratégie Digitale")
+	Categorie.create(:categorie_nom => "Developpement Web")
+	Categorie.create(:categorie_nom => "Visibilité")
+	Categorie.create(:categorie_nom => "Test")
+end
+
