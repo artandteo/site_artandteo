@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170227153352) do
+ActiveRecord::Schema.define(version: 20170228095953) do
 
   create_table "blogs", force: :cascade do |t|
     t.string   "titre"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20170227153352) do
     t.datetime "updated_at",    null: false
     t.integer  "users_id"
     t.integer  "categorie_id"
+    t.string   "slug"
     t.index ["categorie_id"], name: "index_blogs_on_categorie_id"
     t.index ["users_id"], name: "index_blogs_on_users_id"
   end
