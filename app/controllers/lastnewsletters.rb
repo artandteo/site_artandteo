@@ -1,0 +1,3 @@
+class LastNewslettersController < ApplicationController
+
+end

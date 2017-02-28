@@ -1,13 +1,12 @@
 class PagesController < ApplicationController
 	def accueil
 		current_time = DateTime.now
-		puts current_time.strftime "%d/%m/%Y"
-		@date = Newsletter.first
-		if current_time >= @date.date
+		@to_date = Last_Newsletter.first.date
+		date = @to_date.strftime "%d/%m/%Y"
+		if current_time >= date
 			@abonne = Newsletter.all
 			@abonne.each do |a|
 				NewsletterMailer.send_email(a.email).deliver_now
-				Newsletter.update(:date => current_time+6.months)
 			end
 		end
 		
