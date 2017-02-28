@@ -44,6 +44,9 @@ $screen-lg: 1200px;*/
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+.navbar-right {
+  margin-right: 0 !important;
+}
 
 div.content {
   margin: 0 0px 0 0px;
@@ -83,7 +86,6 @@ div.portfolio {
 @mixin bandeau {
   opacity: 0.9;
   height: 200px;
-  background-size: cover;
   margin-bottom: 30px;
   h1 {
     color: $blanc;
@@ -97,11 +99,13 @@ div.portfolio {
 .bandeau_titre {
   @include bandeau;
   background: url(/img/bandeau_1.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 .bandeau_blog {
   @include bandeau;
   background: url(/img/bandeau_2.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 p, a, li, blockquote {
@@ -597,6 +601,7 @@ div.tryptic_3:hover {
 .bandeau_stratdig {
   @include bandeau;
   background: url(/img/bandeau_5.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 .palette {
@@ -618,6 +623,7 @@ div.tryptic_3:hover {
 .bandeau_devweb {
   @include bandeau;
   background: url(/img/bandeau_4.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 // -------------- Visibilité -----------------

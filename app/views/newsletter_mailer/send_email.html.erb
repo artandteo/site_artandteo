@@ -1,4 +1,31 @@
-<h1>Newsletter</h1>
+<header>
+  <div class="top-bar"></div>
+
+  <nav class="navbar navbar-default">
+   <div class="container-fluid">
+       <div id="menu" class="row">
+
+         <div id="left-menu" class="col-sm-5 text-center"></div>
+
+         <div id="logo_at" class="col-sm-2 text-center">
+           <a class="" href="http://artandteo.com">
+             <img alt="Logo ArtandTeo" src="/img/logfb-ArtandTeo.png">
+           </a>
+         </div>
+
+         <div id= "right-menu" class="col-sm-5 text-center"></div>
+
+       </div>
+   </div><!-- /.container-fluid -->
+  </nav>
+</header>
+
+<div class="bandeau_stratdig">
+  <div class="col-sm-12 text-center">
+    <h1>La newsletter ArtandTeo</h1>
+  </div>
+</div>
+
 <section class="last_posts">
   <div class="row">
     <div class="col-md-12 text-center">
@@ -14,12 +41,12 @@
             <h2><%= post.titre.byteslice(0,20) %>...</h2>
             <p class="d_post">Posté le <%= post.created_at.strftime('%d/%m/%Y') %></p>
             <div class="contenu">
-            <%= raw (sanitize remove_tags(post.contenu), tags: %w(p)).truncate(250) %>
+            <%= raw (sanitize (post.contenu), tags: %w(p)).truncate(250) %>
             </div>
             <div class="sav_plus">
-              <form action="<%= blog_path(post) %>">
-                <button type="submit" value="<%= post.titre %>" class="btn btn-default">Lire plus</button>
-              </form>
+                <a href="http://artandteo.com/blogs/<%= post.id %>">
+                  <button value="<%= post.titre %>" class="btn btn-default">Lire plus</button>
+                </a>
             </div>
         </div>
         </div>
@@ -27,3 +54,30 @@
     <% end %>
   </div>
 </section>
+<footer>
+
+  <div id="social-footer">
+    <div class="row">
+    <div class="col-md-12 text-center">
+        <span>
+          <a href="https://www.facebook.com/artandteo/?fref=ts" target="_blank" alt="Facebook ArtandTeo"><img src="/img/icons/fb.png" alt="Facebook ArtandTeo"></a>
+          <a href="https://www.linkedin.com/in/frédéric-reubrecht-2aba76107?trk=nav_responsive_tab_profile" target="_blank" alt="Linkedin ArtandTeo"><img src="/img/icons/lk.png" alt="Linkedin ArtandTeo"></a>
+          <a href="https://twitter.com/artandteo" target="_blank" alt="Twitter ArtandTeo"><img src="/img/icons/tw.png" alt="Twitter"></a>
+          <a href="https://plus.google.com/u/0/103348544084626253437" target="_blank" alt="Google+ ArtandTeo"><img src="/img/icons/gp.png" alt="Google+ ArtandTeo"></a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div id="menu-footer">
+    <div class="row">
+      <div class="col-md-6">
+        <a href="http://www.artandteo.com/mentions_legales"><%= t('mlegales.titre') %></a>
+      </div>
+      <div class="col-md-6">
+        <a href="http://artandteo.com"><%= t('tous_droits_reserves') %></a>
+      </div>
+    </div>
+  </div>
+
+</footer>
