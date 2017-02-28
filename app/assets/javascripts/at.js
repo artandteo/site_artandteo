@@ -31,4 +31,5 @@ document.addEventListener("turbolinks:load", function() {
     $( '.lg-unsel' ).css('opacity','1');
     $( '.lg-sel' ).css('opacity','0.25');
   }
-  });
+
+});
