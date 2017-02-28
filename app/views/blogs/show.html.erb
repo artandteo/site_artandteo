@@ -15,10 +15,10 @@
     <% list_id = [] %>
     <% @blogs.each do |blog| %>
       <% i = i + 1 %>
-      <% list_id<<blog.id %>
+      <% list_id<<blog.slug %>
     <% end %>
     <% for j in 0..i-1 do %>
-      <% if list_id[j] == @blog.id %>
+      <% if list_id[j] == @blog.slug %>
         <% prev = list_id[j-1] %>
         <% nex = list_id[j+1] %>
       <% end %>
