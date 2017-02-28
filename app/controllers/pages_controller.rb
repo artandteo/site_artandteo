@@ -6,10 +6,10 @@ class PagesController < ApplicationController
 		if current_time >= date
 			@abonne = Newsletter.all
 			@abonne.each do |a|
-				NewsletterMailer.send_email(a.email).deliver_now
-			end
+			NewsletterMailer.send_email(a.email).deliver_now
 		end
-		
+		end
+
 		@titre = t('accueil.titre')
 		@last_post = Blog.includes(:user).all.order('created_at DESC').limit(2)
 	end
