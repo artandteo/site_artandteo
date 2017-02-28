@@ -28,6 +28,8 @@ Rails.application.routes.draw do
 
     # NEWSLETTER #
     post '/', to: "newsletters#create"
+    get '/desinscription', to: "newsletters#desinscription"
+    delete '/desinscription', to: "newsletters#destroy"
 
     scope :admin do
       resources :users

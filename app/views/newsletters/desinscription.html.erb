@@ -1,0 +1,8 @@
+<h1>Désabonnement de la Newsletter</h1>
+<%= form_for :desabonnement, method: 'delete' do |f| %>
+
+	<%= f.label :email %>
+	<%= f.email_field :email %>
+	<%= f.submit :valider %>
+
+<% end %>
