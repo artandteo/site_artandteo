@@ -13,7 +13,7 @@
 <br />
 
 <div class="row col-centered">
-  <% @blogs.each do |blog|%>
+  <% @blogs.reverse_each do |blog|%>
       <div class="col-sm-6 col-md-4 spacing">
         <div class="post col-centered">
           <img class="img-responsive" src="<%= blog.image %>" alt="<%= blog.image_legende %>">
