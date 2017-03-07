@@ -1,0 +1,5 @@
+# config/meta.yml
+meta_title: "ArtandTeo"
+meta_description: "Artandtéo est une entreprise spécialisée dans le développement web, les sites internet et la stratégie digitale."
+meta_image: "small_logo-ArtandTeo.png"
+twitter_account: "@artandteo" # indispensable pour les Twitter Cards
