@@ -14,20 +14,20 @@
   <div class="row">
     <%= form_for :contact do |f| %>
       <div class="col-md-8 col-md-offset-2">
-          Votre nom: <%= f.text_field :name, required: true, class: "form-control" %><br />
+          <%= t('contact.nom') %>: <%= f.text_field :name, required: true, class: "form-control" %><br />
       </div>
       <div class="col-md-8 col-md-offset-2">
-          Votre email: <%= f.email_field :email, required: true, class: "form-control" %><br />
+          <%= t('contact.email') %>: <%= f.email_field :email, required: true, class: "form-control" %><br />
       </div>
       <div class="col-md-8 col-md-offset-2">
-          Objet: <%= f.text_field :objet, required: true, class: "form-control" %><br />
+          <%= t('contact.email') %>: <%= f.text_field :objet, required: true, class: "form-control" %><br />
       </div>
       <div class="col-md-8 col-md-offset-2">
-          Votre message: <%= f.text_area :message, required: true, class: "form-control" %><br />
+          <%= t('contact.email') %>: <%= f.text_area :message, required: true, class: "form-control" %><br />
       </div>
       <br />
       <div class="col-md-2 col-md-offset-5">
-          <%= f.submit :Envoyer, class: "form-control btn-default" %>
+          <%= f.submit :Envoyer, value: t('contact.envoyer'), class: "form-control btn-default" %>
       </div>
     <% end %>
   </div>

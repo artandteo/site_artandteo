@@ -1,9 +1,11 @@
-fr: 
+fr:
   blog:
     titre: "Blog"
     post_creer: "Le nouvel article vient d'être publié."
     post_editer: "L'article a été mis à jour."
     post_supprimer: "L'article a été effacé."
+    headertitle: "LE BLOG"
+    more: "Lire plus"
 
   categorie:
     titre: "Catégories"

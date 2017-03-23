@@ -9,3 +9,8 @@ fr:
         A bientôt
         <br />
         <strong>L’équipe d’ArtandTéo</strong>
+    nom: Votre nom
+    email: Votre email
+    objet: Objet
+    message: Votre message
+    envoyer: Envoyer

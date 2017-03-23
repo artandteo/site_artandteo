@@ -1,6 +1,6 @@
 <div class="bandeau_blog">
   <div class="col-sm-12 text-center">
-    <h1>LE BLOG</h1>
+    <h1><%= t('blog.headertitle') %></h1>
   </div>
 </div>
 
@@ -25,7 +25,7 @@
             <div class="sav_plus row col-centered">
               <div class="col-sm-4 col-centered">
                 <form action="<%= blog_path(blog) %>">
-                  <button class="btn btn-default" type="submit" value="<%= blog.titre %>">Lire plus</button>
+                  <button class="btn btn-default" type="submit" value="<%= blog.titre %>"><%= t('blog.more') %></button>
                 </form>
               </div>
               <% if user_signed_in? && current_user.is_admin? %>
@@ -35,7 +35,7 @@
                 </form>
               </div>
               <div class="col-sm-4 col-centered">
-                <a href="<%= blog_path(blog) %>" data-confirm="Êtes-vous sûr?" data-method="delete"><button class="btn btn-danger"type="button" name="button">suppr</button></a>
+                <a href="<%= blog_path(blog) %>" data-confirm="Êtes-vous sûr?" data-method="delete"><button class="btn btn-danger"type="button" name="button">Suppr</button></a>
               </div>
               <% end %>
             </div>

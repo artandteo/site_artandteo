@@ -8,3 +8,8 @@ en:
       See you soon
       <br />
       <strong>The ArtandTeo team</strong>
+    nom: Your name
+    email: Your email
+    objet: Object
+    message: Your message
+    envoyer: Send

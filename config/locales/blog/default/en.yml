@@ -1,9 +1,11 @@
-fr: 
+en:
   blog:
     titre: "Blog"
     post_creer: "New post successfully created."
     post_editer: "New post successfully updated."
     post_supprimer: "New post successfully deleted."
+    headertitle: "THE BLOG"
+    more: "Read more"
 
   categorie:
     titre: "Categories"
