@@ -1,14 +1,12 @@
 en:
   strategie_digitale:
     titre: Digital strategy
-      content1: |
-        <h3>Define together who you are</h3>
+    content1: |
+        "<h3>Define together who you are</h3>
         <p>The identity of your company, your business, your association, your project is unique. The person who will visit your website will have to find you in content and design. This generally implies, for ArtandTeo, to create a personalized theme.</p>
-
         <p>Fortunately, for a project with a limited budget, we propose neutral themes with which your identity can be found in an existing logo, a font, content (texts and media).</p>
-
-        <p>The decision to make or not a particular theme to create your website will be determined with the analysis of your need.</p>
-      content2: |
+        <p>The decision to make or not a particular theme to create your website will be determined with the analysis of your need.</p>"
+    content2: |
         <h3>Focus on your need</h3>
         <p>To create your website, analyze your need and essential, it will enable us to determine together: what are your products and services, who will be your future visitors, what are your development objectives, how much time you can devote to your Website, etc ...</p>
         <p>Will you need:
@@ -18,7 +16,7 @@ en:
         A redesign or creation of a graphic charter?
         A total creation of content?</p>
         <p>This will accurately determine the cost and time to create your site, it will save you valuable time and money for the next. This exchange on your project is generally very fruitful and goes beyond the creation of your website. For this reason, ArtandTéo 's services are not limited to creating a website.</p>
-      content3: |
+    content3: |
         <h3>Understanding your visitors</h3>
         <p>The vocation of the presence of your project on the web is to communicate. Disseminating information without listening to the other person is not communication.</p>
 
@@ -27,16 +25,16 @@ en:
         <p>ArtandTeo uses tools such as Google Analytics and Google Search Console to see what words are used by searchers to find your site, which pages are most visited, which most refer to your site. This allows us to adapt and improve your content.</p>
 
         <p>As you will understand, an effective and sustainable website develops over the long term.</p>
-      content4: |
+    content4: |
         <h3>Choosing a communication strategy</h3>
         <p>Today there are many media and communication tools. The analysis of your needs will lead you to link your website to Youtube, Facebook, Twitter, Pinterest, Google+, Linkedin or others depending on your sector of activity.</p>
 
         <p>These tools offer the opportunity to invest in effective advertising. Using a tool such as Google Adwords can prove very cost effective and quickly popularize your virtual storefront.</p>
-      content5: |
+    content5: |
         <h4>Never lose sight of your goal</h4>
         <p>ArtandTeo makes it a point of honor to never lose sight of the objective of your website. We use animations in CSS3 or jQuery only wisely, we estimate that too many animations or originalities harm the effectiveness and the objective.</p>
         <p>The loading times are often increased, most visitors get lost by not knowing how to interact with the page.</p>
-      content6: |
+    content6: |
         <blockquote>
         <p style="text-align: center;">Our role is to accompany you in this unavoidable process.</p>
         <p style="text-align: center;">The more you will be invested in your project and the more successful it will be.</p>
