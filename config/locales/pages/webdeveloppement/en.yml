@@ -1,3 +1,31 @@
 en:
   web_developpement:
-    titre: Web Developpement
+    titre: Web Development
+    content1: |
+        <h3>Technology at the service of your identity</h3>
+        <p>The basics of your project are defined by a specification, developing your website now consists of:</p>
+        <ul>
+         	<li>Set up a graphic chart to reflect your identity.</li>
+         	<li>Choose a technology adapted to your project.</li>
+        </ul>
+    content2: |
+        <h3>Responsive websites</h3>
+        <p>Nowadays, 80% of the navigation on the net is done on mobile devices. Your presence on the net must be "responsive", suitable for all digital surfaces.</p>
+
+        <p>The "mobile first" concept design as well as Frameworks such as Bootstrap® and Foundation® respond to these new requirements of the evolution of the digital world.</p>
+
+        <p>Most current CMS (Content Management System) (Wordpress®, Drupal®, Prestashop® ...) are also responsive and adapt very well to mobile phones. The transformation of classic menus found on a desktop computer automatically turns into "Menu Burger", this symbol has become so common that it is now also found on websites in desktop version. The menu then retracts at will and frees up space for more content.</p>
+    content3: |
+        <h3>Professional content</h3>
+        <p>A professional website stands out for the quality of its contents.</p>
+
+        <p>ArtandTeo proposes to take charge of the realization of your various media such as infographies, photos, videos, audio or any other contents.</p>
+
+        <p>If so, we do not hesitate to call on professional photographers, as well as professional translators, so that your content is valued at its true value.</p>
+    content4: |
+        <h3>Content management</h3>
+        <p>If you want to manage the content of your site yourself, we master CMS (Content Management System) such as Drupal®, Wordpress® or Prestashop® (e-commerce). We also propose the creation of custom CMS to your need.</p>
+
+        <p>We can prepare you for this stage by offering you training on your workstation or by providing documentation adapted to the management of your site.</p>
+    content5: |
+        <blockquote>In communication, the most complicated is neither the message nor the technique, but the receiver.</blockquote>

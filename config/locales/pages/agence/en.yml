@@ -5,26 +5,26 @@ en:
         <h3>Founders</h3>
     content1: |
         <p>ArtandTeo is a young french startup borned in Mayenne in 2015.</p>
-        <p>Passionés par l'univers digital, espace de création, où se jouent les nouvelles stratégies de communication, Fred et Jean-Pierre mettent leurs expériences créatives au service de vos projets.</p>
+        <p>Passionate about digital world, a creative space where new communication strategies are played out, Fred and Jean-Pierre put their creative experiences at the service of your projects.</p>
     content2: |
-        Fred and Jean-Pierre, the founders, entourés d'une épquipe au service de vos projets.
+        Fred and Jean-Pierre, the founders, with the team dedicated to your projects.
     fred: |
-        Dessinateur de formation.
-        Développeur Front-End, design, <a>SMO<span>visibilité par réseaux sociaux</span></a>, <a>KPI<span>suivi de performance</span></a>
+        Originally a drawer,
+        front-end developer, web designer, <a>SMO<span>Social Media Optimization</span></a>, <a>KPI<span>Key Performance Indicator</span></a>
     j_p: |
-        Musicien de formation.
-        Développeur Back-End, rédaction, médias (audio/vidéo), <a>SEO<span>référencement naturel</span></a>, <a>SEM<span>référencement payant</span></a>
+        Originally a musician,
+        back-end developer, redaction, media (audio/video), <a>SEO<span>Search Engine Optimization</span></a>, <a>SEM<span>Search Engine Marketing</span></a>
     sous_titre_2: |
-        <h3>Equipage</h3>
+        <h3>Team</h3>
     partner1: |
         <h4>Isabelle</h4>
-        <p>Redaction et traduction allemand, anglais, français.</p>
+        <p>Redaction and translation German, English, French.</p>
     partner2: |
         <h4>Alexandre</h4>
-        <p>Redaction, posts et recettage.</p>
+        <p>Redaction, posts et recipe.</p>
     partner3: |
         <h4>Arthur</h4>
-        <p>Graphiste, création logos et infographies.</p>
+        <p>Graphic designer, logos and graphic design.</p>
     partner4: |
         <h4>Kevin</h4>
         <p>Back-End developer, php, ruby; symfony, rails...</p>
