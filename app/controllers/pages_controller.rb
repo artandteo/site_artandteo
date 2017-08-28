@@ -2,12 +2,19 @@ class PagesController < ApplicationController
 	def accueil
 		current_time = DateTime.now
 		@to_date = Last_Newsletter.first.date
-		date = @to_date.strftime "%d/%m/%Y"
-		if current_time >= date
+		# Date convertie en DD/MM/AAAA
+		@formated_date = @to_date.strftime("%d/%m/%Y")
+		@date_months = @to_date-6.months
+
+		@last_post = Blog.last
+		@post_created_at = @last_post.created_at.strftime("%d/%m/%Y")
+
+		if current_time >= @formated_date && @post_created_at >= @date_months.strftime("%d/%m/%Y")
 			@abonne = Newsletter.all
 			@abonne.each do |a|
-			NewsletterMailer.send_email(a.email).deliver_now
-		end
+				NewsletterMailer.send_email(a.email).deliver_now
+				Last_Newsletter.update(date: current_time+6.months)
+			end
 		end
 
 		@titre = t('accueil.titre')
