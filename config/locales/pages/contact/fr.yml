@@ -2,6 +2,8 @@ fr:
   contact:
     titre: Nous contacter
     content: |
+        Bien que toutes les données informatiques vous concernant soient traitées de manière strictement privée et confidentielle, conformément aux articles 15 et suivants du Règlement Général sur la Protection des Données (RGPD), l'utilisateur de ce site bénéficie des droits d’accès, de rectification, d'effacement et de limitation portant sur les données le concernant ainsi que du droit d'opposition portant sur les traitements de données opérés via le site www.artandteo.com en envoyant un e-mail ou bien un courrier postal.
+
         N'hésitez pas à nous laisser un message via le formulaire ci-dessous, nous répondrons à toutes vos questions sous 48h.
 
         Vous avez également la possibilité de nous laisser un message via les réseaux sociaux.
@@ -14,3 +16,4 @@ fr:
     objet: Objet
     message: Votre message
     envoyer: Envoyer
+    mess: Je comprends que, lors du transfert des données via ce formulaire de contact et après avoir cliqué sur le bouton 'Envoyer', mes données personnelles sont transmises au responsable du site uniquement pour permettre à ce dernier de me répondre.

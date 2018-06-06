@@ -2,6 +2,8 @@ en:
   contact:
     titre: Contact us
     content: |
+      All data concerning you are treated in a private and confidential manner, in accordance with article 15 and subsequent of the General Data Protection Regulation (GDPR). Nevertheless users of this website enjoy the right to access, rectify, delete and limit data that concerns them, including the right to oppose the processing of such data through the website www.artandteo.com. To do this, you can send us an email or a letter through the post.
+
       Please leave us a message via the form below, we will answer your questions within 48h.
       You also have the possibility to leave us a message via social networks.
       <br />
@@ -13,3 +15,4 @@ en:
     objet: Object
     message: Your message
     envoyer: Send
+    mess: I understand that, after clicking on the SEND button at the bottom of this contact form, my personal data will be sent to the manager of this website for the sole purpose of enabling a reply.

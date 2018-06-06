@@ -26,6 +26,10 @@
           <%= t('contact.message') %>: <%= f.text_area :message, required: true, class: "form-control" %><br />
       </div>
       <br />
+      <div>
+      <div class="col-md-8 col-md-offset-2">
+          <p style="text-align: center;"><i><%= t('contact.mess') %><br /></i></p>
+      </div>
       <div class="col-md-2 col-md-offset-5">
           <%= f.submit :Envoyer, value: t('contact.envoyer'), class: "form-control btn-default" %>
       </div>
